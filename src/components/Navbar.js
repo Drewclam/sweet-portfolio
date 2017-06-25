@@ -8,6 +8,9 @@ class Navbar extends Component {
         <span>About</span>
         <span>Projects</span>
         <span>Contact</span>
+        <div className="social-media">
+          <i className="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+        </div>
       </div>
     );
   }
