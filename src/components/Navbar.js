@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 class Navbar extends Component {
-  openFacebook() {
-    window.open()
-  }
-
   render() {
     return (
       <div className="navbar">
