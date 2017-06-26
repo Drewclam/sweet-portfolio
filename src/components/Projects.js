@@ -26,19 +26,19 @@ export default class Projects extends Component {
         <div>
           <h3>FindAHike</h3>
           <span><h4>Summary</h4>A web-app powered by the Trail API. Discover hiking trails near you, track completed hikes or save them on a wishlist for later.</span>
-          <span><h4>Notable Technologies</h4>Built with AngularJS, MySQL, Sequelize Node.js, Express.js, Bootstrap, Trail API, Google Maps API</span>
+          <span><h4>Notable Technologies</h4>Built with AngularJS, MySQL, Sequelize, Node.js, Express.js, Bootstrap, Trail API, Google Maps API</span>
           <div>
             <img src="https://puu.sh/wuqvb/e8ca156dd4.png" />
             <img src="https://puu.sh/wuqxK/846b3e0b54.png" />
           </div>
         </div>
         <div>
-          <h3>FindAHike</h3>
-          <span><h4>Summary</h4>A web-app powered by the Trail API. Discover hiking trails near you, track completed hikes or save them on a wishlist for later.</span>
-          <span><h4>Notable Technologies</h4>Built with AngularJS, MySQL, Sequelize Node.js, Express.js, Bootstrap, Trail API, Google Maps API</span>
+          <h3>ng-Challenge</h3>
+          <span><h4>Summary</h4>A tool for League of Legends enthusiasts to track win/loss ratios on challenger-tier players.</span>
+          <span><h4>Notable Technologies</h4>Built with AngularJS, MongoDB, Mongoose, Node.js, Express.js, Riot Games API</span>
           <div>
-            <img src="" />
-            <img src="" />
+            <img src="https://puu.sh/wniMK/5730fe753f.png" />
+            <img src="https://puu.sh/wuqGE/5c74da951e.png" />
           </div>
         </div>
       </div>
