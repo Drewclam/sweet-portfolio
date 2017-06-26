@@ -7,7 +7,34 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      name: '',
+      email: '',
+      phone: '',
+      body: ''
+    }
+  }
+
+  changeName(name) {
+    this.setState({name});
+  }
+
+  changeEmail(email) {
+    this.setState({email});
+  }
+
+  changePhone(phone) {
+    this.setState({phone});
+  }
+
+  changeBody(body) {
+    this.setState({body});
+  }
+
   sendMessage(message) {
+    console.log('sending emssage', message );
     axios.post('/contact', message)
       .then(res => console.log(res))
       .catch(err => console.log(err));
@@ -20,7 +47,13 @@ class App extends Component {
         <Navbar url={displayPictureUrl} />
         <About />
         <Projects />
-        <Contact sendMessage={this.sendMessage.bind(this)} />
+        <Contact
+          changeName={this.changeName.bind(this)}
+          changeEmail={this.changeEmail.bind(this)}
+          changePhone={this.changePhone.bind(this)}
+          changeBody={this.changeBody.bind(this)}
+          sendMessage={this.sendMessage.bind(this)}
+        />
       </div>
     );
   }

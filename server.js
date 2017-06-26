@@ -7,7 +7,6 @@ const account = require('./config.js');
 app.use(express.static(__dirname + '/build'));
 
 app.post('/contact', (req, res) => {
-  console.log('received message', req.body);
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
