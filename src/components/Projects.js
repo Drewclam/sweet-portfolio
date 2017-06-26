@@ -4,7 +4,7 @@ export default class Projects extends Component {
   render() {
     return (
       <div>
-        <h2>Projects</h2>
+        <h1>Projects</h1>
         <div>
           <h3>It's Cut Time</h3>
           <span><h4>Summary</h4>A platform to bring local hairstylists directly to the user's door and manage appointment bookings.</span>

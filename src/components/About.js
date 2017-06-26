@@ -4,7 +4,9 @@ export default class About extends Component {
   render() {
     return (
       <div>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        <h1>About</h1>
+        <p>
+          My name is Andrew Lam. I am a full-stack JavaScript web developer who loves working with Angular 4, AngularJS, React and React Native front-end frameworks. I am experienced with Node.js and Express.js backend technologies and MongoDB, MySQL and Postgres databases. If you are looking for a talented and dedicated JavaScript engineer, reach out!
         </p>
       </div>
     );
