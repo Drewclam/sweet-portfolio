@@ -18,6 +18,7 @@ class App extends Component {
   }
 
   changeName(name) {
+    console.log('changed name to ', name);
     this.setState({name});
   }
 
@@ -33,11 +34,28 @@ class App extends Component {
     this.setState({body});
   }
 
-  sendMessage(message) {
-    console.log('sending emssage', message );
-    axios.post('/contact', message)
-      .then(res => console.log(res))
-      .catch(err => console.log(err));
+  sendMessage() {
+    const message = {
+      name: this.state.name,
+      email: this.state.email,
+      phone: this.state.phone,
+      text: this.state.body
+    };
+    // this.setState({
+    //   name: '',
+    //   email: '',
+    //   phone: '',
+    //   body: ''
+    // });
+    console.log('sending emssage', {body: message});
+    axios({
+      method: 'post',
+      url: '/contact',
+      headers: {'Content-Type': 'application/json'},
+      data: message
+    })
+    .then(res => console.log(res))
+    .catch(err => console.log(err));
   }
 
   render() {
