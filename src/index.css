@@ -41,16 +41,24 @@ img {
   flex: 1;
 }
 
+.projects-container {
+  padding: 0 8rem;
+}
+
 .project {
   display: flex;
+  border: 1px solid red;
 }
 
 .project-info {
   flex: 1;
+  flex-direction: column;
+  flex-basis: 50%;
 }
 
 .project-pics {
   flex: 1;
+  flex-basis: 50%;
 }
 
 

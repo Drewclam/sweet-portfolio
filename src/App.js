@@ -59,11 +59,10 @@ class App extends Component {
   }
 
   render() {
-    const displayPictureUrl = 'https://scontent.fybz2-2.fna.fbcdn.net/v/t1.0-9/19420494_10212759759449398_1377538664024453148_n.jpg?oh=b52009b23233708b36e17bde5c492b50&oe=59D8BBA5';
     return (
       <div className="App">
         <Navbar />
-        <About url={displayPictureUrl} />
+        <About />
         <Projects />
         <Contact
           name={this.state.name}
