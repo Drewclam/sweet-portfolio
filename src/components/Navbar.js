@@ -12,7 +12,7 @@ export default class Navbar extends Component {
     );
   }
 }
-        // <img className="profile-pic" src={this.props.url} />
+
         // <div className="social-media-container">
         //   <a href="https://www.facebook.com/DrewCLam">
         //     <i className="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
