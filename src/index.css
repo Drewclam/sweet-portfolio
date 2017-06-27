@@ -19,28 +19,19 @@ body {
 }
 
 .about-container {
-  display: flex;
-  flex-direction: row;
   margin-top: 3rem;
+  padding: 0 8rem;
   border: 1px solid red;
 }
 
-.profile-pic {
-  flex: 2;
-  max-height: 15rem;
-  max-width: 15rem;
-}
-
-.about-text-container {
-  flex: 1;
+.about-info-container {
   display: flex;
-  flex-direction: column;
-}
-
-.about-header {
-  flex: 1;
 }
 
 .about-blurb {
+  flex: 1;
+}
+
+.about-tech-container {
   flex: 1;
 }
