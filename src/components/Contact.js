@@ -5,6 +5,7 @@ export default class Contact extends Component {
     const { name, email, phone, body, changeName, changeEmail, changePhone, changeBody, sendMessage } = this.props;
     return (
       <div>
+        <a name="contact"></a>
         <h1>Contact</h1>
         <h4>Name</h4>
         <input

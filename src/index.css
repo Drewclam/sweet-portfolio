@@ -2,4 +2,18 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  height: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border: 1px solid black;
+  height: 3rem;
+}
+
+.navbar-container span {
+  margin: 1rem 1rem;
+  cursor: pointer;
 }

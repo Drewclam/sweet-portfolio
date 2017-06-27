@@ -4,6 +4,7 @@ export default class Projects extends Component {
   render() {
     return (
       <div>
+        <a name="projects"></a>
         <h1>Projects</h1>
         <div>
           <h3>It's Cut Time</h3>
