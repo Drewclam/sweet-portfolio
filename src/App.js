@@ -18,7 +18,6 @@ class App extends Component {
   }
 
   changeName(name) {
-    console.log('changed name to ', name);
     this.setState({name});
   }
 
@@ -41,13 +40,14 @@ class App extends Component {
       phone: this.state.phone,
       text: this.state.body
     };
-    // this.setState({
-    //   name: '',
-    //   email: '',
-    //   phone: '',
-    //   body: ''
-    // });
-    console.log('sending emssage', {body: message});
+
+    this.setState({
+      name: '',
+      email: '',
+      phone: '',
+      body: ''
+    });
+
     axios({
       method: 'post',
       url: '/contact',
@@ -55,7 +55,7 @@ class App extends Component {
       data: message
     })
     .then(res => console.log(res))
-    .catch(err => console.log(err));
+    .catch(err => console.log(err, message));
   }
 
   render() {
@@ -66,6 +66,10 @@ class App extends Component {
         <About />
         <Projects />
         <Contact
+          name={this.state.name}
+          email={this.state.email}
+          phone={this.state.phone}
+          body={this.state.body}
           changeName={this.changeName.bind(this)}
           changeEmail={this.changeEmail.bind(this)}
           changePhone={this.changePhone.bind(this)}
