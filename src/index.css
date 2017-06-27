@@ -5,6 +5,11 @@ body {
   height: 100%;
 }
 
+img {
+  max-width: 20rem;
+  max-height: 20rem;
+}
+
 .navbar-container {
   display: flex;
   flex-direction: row;
@@ -35,3 +40,23 @@ body {
 .about-tech-container {
   flex: 1;
 }
+
+.project {
+  display: flex;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-pics {
+  flex: 1;
+}
+
+
+
+
+
+
+
+
