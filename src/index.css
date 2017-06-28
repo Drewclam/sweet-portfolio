@@ -51,8 +51,9 @@ img {
 .about-container {
   display: flex;
   padding: 0 2rem;
+  align-items: flex-end;
   /*border: 1px solid red;*/
-  height: 92vh;
+  height: 91vh;
 }
 
 .about-container .profile-pic {
@@ -64,9 +65,9 @@ img {
 
 .about-container .about-blurb-container {
   text-align: left;
-  margin-top: 14rem;
+  margin-bottom: 16.5rem;
   margin-left: 6rem;
-  border: 1px solid brown;
+  /*border: 1px solid brown;*/
   height: 17rem;
   width: 40rem;
 }
@@ -100,7 +101,6 @@ img {
   margin: 1rem 1rem;
   cursor: pointer;
 }
-
 
 /* Projects */
 .projects-container {
