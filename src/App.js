@@ -3,6 +3,8 @@ import axios from 'axios';
 import './App.css';
 import Navbar from './components/Navbar';
 import About from './components/About';
+import Header from './components/Header';
+import TechStack from './components/TechStack';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
@@ -61,8 +63,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar />
+        <Header />
         <About />
+        <TechStack />
         <Projects />
         <Contact
           name={this.state.name}

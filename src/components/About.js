@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import picture from '../picture.jpg';
+import picture from '../Bitmap.png';
 
 export default class About extends Component {
   render() {
