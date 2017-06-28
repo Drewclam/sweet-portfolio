@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 
 export default class Navbar extends Component {
   render() {
+    const { changeCurrentPage } = this.props;
     return (
       <div className="navbar-container">
-        <span className="nav-home">Home</span>
-        <span className="nav-about"><a href="#about">About</a></span>
-        <span className="nav-projects"><a href="#projects">Projects</a></span>
-        <span className="nav-contact"><a href="#contact">Contact</a></span>
+        <a href="#about" onClick={() => changeCurrentPage('about')}><div className="nav-about"></div></a>
+        <a href="#tech"><div className="nav-tech"></div></a>
+        <a href="#projects"><div className="nav-projects"></div></a>
+        <a href="#contact"><div className="nav-contact"></div></a>
       </div>
     );
   }

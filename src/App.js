@@ -15,8 +15,14 @@ class App extends Component {
       name: '',
       email: '',
       phone: '',
-      body: ''
+      body: '',
+      current: 'about'
     }
+  }
+
+  changeCurrentPage(page) {
+    this.setState({page});
+    console.log('state of page ', this.state.current);
   }
 
   changeName(name) {
@@ -64,6 +70,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <Navbar changeCurrentPage={this.changeCurrentPage.bind(this)} />
         <About />
         <TechStack />
         <Projects />

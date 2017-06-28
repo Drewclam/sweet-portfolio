@@ -47,6 +47,10 @@ img {
   margin-right: 0.5rem;
 }
 
+.social-media-container a {
+  text-decoration: none;
+}
+
 /* About */
 .about-container {
   display: flex;
@@ -88,18 +92,21 @@ img {
 
 /* Navbar */
 .navbar-container {
+  position: fixed;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-direction: column;
+  right: 3rem;
+  top: 25rem;
   /*border: 1px solid black;*/
-  height: 3rem;
-  background-color: #CDD7D6;
-  font-size: 15px;
 }
 
-.navbar-container span {
-  margin: 1rem 1rem;
+.navbar-container div {
   cursor: pointer;
+  border: 3px solid grey;
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  margin-top: 0.25rem;
 }
 
 /* Projects */
