@@ -8,9 +8,9 @@ export default class About extends Component {
       <div className="about-container">
         <a name="about"></a>
         <img className="profile-pic" src={picture} />
-          <p className="about-blurb">
-            My name is Andrew Lam. I am a full-stack JavaScript web developer who loves working with Angular 4, AngularJS, React and React Native front-end frameworks. I am experienced with Node.js and Express.js backend technologies and MongoDB, MySQL and Postgres databases. If you are looking for a talented and dedicated JavaScript engineer, reach out!
-          </p>
+        <p className="about-blurb">
+          Hi! My name is Andrew. I'm a full-stack JavaScript software engineer. Ever since I was a kid I loved playing video games. Developing this passion into a programming career was a natural transition for me. Even now I'm still an avid gamer (ranked top 1% in League of Legends)! Recently, I've collaborated on projects using frameworks such as Angular 4, AngularJS, React and React Native. On the back-end I'm experienced with using Node.js, Express.js, MySQL and MongoDB. If you are looking for a talented and dedicated JavaScript engineer, <a href="#contact">reach out!</a>
+        </p>
       </div>
     );
   }
@@ -23,3 +23,5 @@ export default class About extends Component {
           //   <li className="about-tech">MySQL</li>
           //   <li className="about-tech">MongoDB</li>
           // </div>
+
+          // TECH STACK: Angular 4, AngularJS, React and React Native. I am experienced with Node.js and Express.js backend technologies and MongoDB, MySQL and Postgres databases.
