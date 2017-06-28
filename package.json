@@ -8,7 +8,7 @@
     "nodemailer": "^4.0.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-track": "^0.4.4"
+    "react-visibility-sensor": "^3.10.0"
   },
   "devDependencies": {
     "react-scripts": "1.0.7"

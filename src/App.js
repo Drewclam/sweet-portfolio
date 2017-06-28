@@ -7,6 +7,7 @@ import Header from './components/Header';
 import TechStack from './components/TechStack';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import VisibilitySensor from '../node_modules/react-visibility-sensor';
 
 class App extends Component {
   constructor() {
@@ -20,9 +21,9 @@ class App extends Component {
     }
   }
 
-  changeCurrentPage(page) {
-    this.setState({page});
-    console.log('state of page ', this.state.current);
+  changeCurrentPage(isPageVisible, pageName) {
+    this.setState({current: pageName});
+    console.log(this.state.current);
   }
 
   changeName(name) {
@@ -70,9 +71,18 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Navbar changeCurrentPage={this.changeCurrentPage.bind(this)} />
-        <About />
-        <TechStack />
+        <Navbar changeCurrentPage={this.changeCurrentPage.bind(this)} current={this.state.current} />
+        <VisibilitySensor
+          onChange={(isPageVisible) => this.changeCurrentPage(isPageVisible, 'about')}
+          partialVisibility={true}
+        >
+          <About />
+        </VisibilitySensor>
+        <VisibilitySensor
+          onChange={(isPageVisible) => this.changeCurrentPage(isPageVisible, 'tech')}
+          partialVisibility={true}>
+          <TechStack />
+        </VisibilitySensor>
         <Projects />
         <Contact
           name={this.state.name}
