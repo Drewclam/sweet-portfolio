@@ -15,7 +15,7 @@ img {
   display: flex;
   flex-direction: row;
   font-size: 20px;
-  height: 4rem;
+  height: 4.5rem;
 }
 
 .header-name {
@@ -30,19 +30,21 @@ img {
   flex: 2;
   display: flex;
   justify-content: flex-end;
-  padding: 0.8rem;
+  align-items: center;
   border: 1px solid black;
+  margin-right: 2rem;
 }
 
 .social-media-container i {
   color: white;
   background-color: black;
-  border: 1px solid black;
   border-radius: 50%;
-  width: 70%;
-  height: 100%;
-  font-size: 28px;
-  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.5rem;
 }
 
 /* About */
