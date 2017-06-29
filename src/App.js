@@ -8,6 +8,7 @@ import TechStack from './components/TechStack';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import VisibilitySensor from '../node_modules/react-visibility-sensor';
+import TrackVisibility from '../node_modules/react-on-screen'; // CommonJs : require('react-on-screen').default
 
 class App extends Component {
   constructor() {
@@ -17,13 +18,17 @@ class App extends Component {
       email: '',
       phone: '',
       body: '',
-      current: 'about'
+      height: 0
     }
   }
 
-  changeCurrentPage(isPageVisible, pageName) {
-    this.setState({current: pageName});
-    console.log(this.state.current);
+  componentDidMount() {
+     window.addEventListener('scroll', () => this.changeHeight());
+  }
+
+  changeHeight() {
+    this.setState({height: window.pageYOffset});
+    console.log(this.state.height);
   }
 
   changeName(name) {
@@ -69,20 +74,13 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App" id="container" onScroll={this.changeHeight}>
         <Header />
-        <Navbar changeCurrentPage={this.changeCurrentPage.bind(this)} current={this.state.current} />
-        <VisibilitySensor
-          onChange={(isPageVisible) => this.changeCurrentPage(isPageVisible, 'about')}
-          partialVisibility={true}
-        >
-          <About />
-        </VisibilitySensor>
-        <VisibilitySensor
-          onChange={(isPageVisible) => this.changeCurrentPage(isPageVisible, 'tech')}
-          partialVisibility={true}>
-          <TechStack />
-        </VisibilitySensor>
+        <Navbar
+          current={this.state.current}
+        />
+        <About changeHeight={this.changeHeight.bind(this)} />
+        <TechStack />
         <Projects />
         <Contact
           name={this.state.name}

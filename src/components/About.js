@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 import picture from '../Bitmap.png';
 
 export default class About extends Component {
+  componentDidMount() {
+    const height = document.getElementById('container').clientHeight;
+    this.props.changeHeight(height);
+  }
   render() {
     return (
       <div className="about-container">
