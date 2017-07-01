@@ -77,7 +77,7 @@ class App extends Component {
       <div className="App" id="container" onScroll={this.changeHeight}>
         <Header />
         <Navbar
-          current={this.state.current}
+          height={this.state.height}
         />
         <About changeHeight={this.changeHeight.bind(this)} />
         <TechStack />

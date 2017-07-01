@@ -3,12 +3,11 @@ import React, { Component } from 'react';
 export default class Navbar extends Component {
   render() {
     const { changeCurrentPage, height } = this.props;
-
     return (
       <div className="navbar-container">
         <a href="#about" onClick={() => changeCurrentPage('about')}>
           <div className="nav-outer">
-            {height === 'about' && <div className="nav-inner"></div>}
+            {height === 659 && <div className="nav-inner"></div>}
           </div>
         </a>
         <a href="#tech">
