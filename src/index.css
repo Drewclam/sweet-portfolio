@@ -123,6 +123,24 @@ img {
   border-radius: 50%;
 }
 
+/* Techstack */
+.tech-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tech-icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.tech-icon-wrapper img {
+  max-height: 10rem;
+  max-width: 10rem;
+  border: 1px solid black;
+}
+
 /* Projects */
 .projects-container {
   padding: 0 8rem;

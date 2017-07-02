@@ -73,6 +73,14 @@ class App extends Component {
   }
 
   render() {
+    const techUrls = [
+    'https://material.angularjs.org/latest/img/logo.svg',
+    'https://camo.githubusercontent.com/d18a06dffe0778d6be8b91f4e0cd5a18d5287063/687474703a2f2f7777772e6e6967656c736d6974682e636f2f696d616765732f72656163746a732e706e67',
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png',
+    'http://nodejs-cloud.com/img/128px/expressjs.png',
+    'https://camo.githubusercontent.com/6effdb8103365043944db7a341e91ffe2fc234e5/68747470733a2f2f63646e2e7261776769742e636f6d2f706564726f6d616c74657a2f747970657363726970742d6c6f676f2d72656372656174696f6e2f6d61737465722f6c6f676f732f747970657363726970742d636f6c6f722d6c6f676f2e737667',
+    'https://www.seeklogo.net/wp-content/uploads/2015/10/mongodb-logo-vector-download.jpg'];
+
     return (
       <div className="App" id="container" onScroll={this.changeHeight}>
         <Header />
@@ -80,7 +88,7 @@ class App extends Component {
           height={this.state.height}
         />
         <About changeHeight={this.changeHeight.bind(this)} />
-        <TechStack />
+        <TechStack techUrls={techUrls} />
         <Projects />
         <Contact
           name={this.state.name}

@@ -7,11 +7,12 @@ export default class Navbar extends Component {
       <div className="navbar-container">
         <a href="#about" onClick={() => changeCurrentPage('about')}>
           <div className="nav-outer">
-            {height === 659 && <div className="nav-inner"></div>}
+            {height >= 0 && height <= 605 && <div className="nav-inner"></div>}
           </div>
         </a>
         <a href="#tech">
           <div className="nav-outer">
+            {height >= 605 && height <= 6511 && <div className="nav-inner"></div>}
           </div>
         </a>
         <a href="#projects"><div className="nav-outer"></div></a>
