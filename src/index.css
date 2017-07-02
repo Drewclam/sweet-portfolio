@@ -133,12 +133,15 @@ img {
 .tech-icon-wrapper {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tech-icon-wrapper img {
   max-height: 10rem;
   max-width: 10rem;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
+  padding: 0.5rem;
 }
 
 /* Projects */
