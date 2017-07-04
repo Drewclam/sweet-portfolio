@@ -55,9 +55,9 @@ img {
 .about-container {
   display: flex;
   padding: 0 2rem;
-  align-items: flex-end;
+  align-items: flex-start;
   /*border: 1px solid red;*/
-  height: 91vh;
+  height: 100vh;
 }
 
 .about-container .profile-pic {
@@ -69,7 +69,7 @@ img {
 
 .about-container .about-blurb-container {
   text-align: left;
-  margin-bottom: 16.5rem;
+  margin-top: 14rem;
   margin-left: 6rem;
   /*border: 1px solid brown;*/
   height: 17rem;
@@ -108,6 +108,7 @@ img {
   width: 1rem;
   margin-top: 0.25rem;
   position: relative;
+  overflow-y: hidden;
 }
 
 .navbar-container .nav-inner {
@@ -128,6 +129,9 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
+  border: 1px solid black;
+  padding: 4rem;
+  height: 100vh;
 }
 
 .tech-icon-wrapper {
@@ -137,11 +141,18 @@ img {
   justify-content: center;
 }
 
-.tech-icon-wrapper img {
-  max-height: 10rem;
-  max-width: 10rem;
-  /*border: 1px solid black;*/
-  padding: 0.5rem;
+.tech-icon-wrapper i {
+  font-size: 8em;
+  padding: 2rem 1.5rem;
+}
+
+.tech-icon-wrapper em {
+  font-size: 8em;
+  padding: 2rem 1.5rem;
+}
+
+.tech-icon-wrapper .add-size {
+  font-size: 9em;
 }
 
 /* Projects */
