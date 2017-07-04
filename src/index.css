@@ -35,6 +35,10 @@ img {
   margin-right: 2rem;
 }
 
+.social-media-container .social-media-item {
+  padding: 3px;
+}
+
 .social-media-container i {
   color: white;
   background-color: black;
