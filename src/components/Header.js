@@ -16,11 +16,11 @@ export default class Header extends Component {
         <div className="social-media-container">
           {socialUrls.map(url =>
             <div className="social-media-item">
-            <SocialIcon
-              url={url}
-              color="black"
-              style={{ height: 35, width: 35 }}
-            />
+              <SocialIcon
+                url={url}
+                color="black"
+                style={{ height: 35, width: 35 }}
+              />
             </div>
           )}
         </div>
