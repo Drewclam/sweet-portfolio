@@ -5,15 +5,15 @@ export default class TechStack extends Component {
     return (
       <div className="tech-container">
         <a name="tech"></a>
-        <h1>Tech Stack</h1>
+        <p className="section-title">Tech Stack.</p>
         <div className="tech-wrapper">
           <p className="small">Html.</p>
           <p className="large">Angular 2.</p>
           <p className="med">React.</p>
           <p className="small">Grunt.</p>
-          <p className="small">TypeScript.</p>
+          <p className="large">TypeScript.</p>
           <p className="small">Backbone.</p>
-          <p className="small">NodeJS.</p>
+          <p className="med">NodeJS.</p>
           <p className="small">ExpressJS.</p>
           <p className="small">MongoDB.</p>
           <p className="small">MySQL.</p>
@@ -23,6 +23,13 @@ export default class TechStack extends Component {
           <p className="small">Git.</p>
           <p className="small">Grunt.</p>
           <p className="small">CSS3.</p>
+          <p className="small">Digital Ocean.</p>
+          <p className="small">React Native.</p>
+          <p className="small">AngularJS.</p>
+          <p className="small">D3.</p>
+          <p className="small">Auth0.</p>
+          <p className="small">Mocha/Chai.</p>
+          <p className="small">Bootstrap.</p>
         </div>
       </div>
     );

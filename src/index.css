@@ -1,13 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Arial', sans-serif;
   height: 100%;
 }
 
-img {
-  /*max-width: 20rem;
-  max-height: 20rem;*/
+.section-title {
+  font-size: 4em;
+  font-weight: bold;
 }
 
 /* Header */
@@ -72,26 +72,20 @@ img {
 }
 
 .about-container .about-blurb-container {
+  display: flex;
+  flex-direction: column;
   text-align: left;
-  margin-top: 14rem;
+  margin-top: 7rem;
   margin-left: 6rem;
   /*border: 1px solid brown;*/
-  height: 17rem;
-  width: 40rem;
+  height: 60%;
+  width: 50%;
 }
 
-.about-container .about-blurb-container h1 {
-  padding: 0 0;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-top: 0;
-  font-size: 50px;
-}
-
-.about-container .about-blurb-container p {
-  padding: 0 0;
-  margin: 0 0;
-  font-size: 18px;
+.about-container .about-blurb-container .blurb-content {
+  margin-top: -2rem;
+  font-size: 1.5rem;
+  font-style: bold;
 }
 
 /* Navbar */
@@ -141,13 +135,18 @@ img {
 
 .tech-wrapper {
   display: flex;
+  align-items: baseline;
   flex-wrap: wrap;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
+  width: 95%;
 }
 
 .tech-wrapper p {
   text-transform: uppercase;
-  font-weight: bolder;
+  font-weight: bold;
+  padding: 0 3px;
+  /*border: 1px solid red;*/
+  height: 15px;
 }
 
 .tech-wrapper .small {
@@ -155,11 +154,11 @@ img {
 }
 
 .tech-wrapper .med {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .tech-wrapper .large {
-  font-size: 2em;
+  font-size: 4em;
 }
 
 /*.tech-icon-wrapper {
