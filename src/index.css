@@ -191,18 +191,20 @@ body {
   display: flex;
   border: 1px solid black;
   flex-direction: row;
-  width: 90vw;
   flex-wrap: wrap;
+  justify-content: space-between;
+  width: 85vw;
 }
 
 .project {
   display: flex;
   flex-direction: column-reverse;
-  /*border: 1px solid red;*/
+  align-items: center;
+  border: 1px solid red;
 }
 
 .project img {
-  max-height: 20rem;
+  max-width: 30rem;
 }
 
 
