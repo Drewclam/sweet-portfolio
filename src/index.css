@@ -6,7 +6,7 @@ body {
 }
 
 .section-title {
-  font-size: 4em;
+  font-size: 3.5em;
   font-weight: bold;
 }
 
@@ -193,7 +193,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 85vw;
+  width: 80vw;
 }
 
 .project {
@@ -201,10 +201,11 @@ body {
   flex-direction: column-reverse;
   align-items: center;
   border: 1px solid red;
+  height: 33%;
 }
 
 .project img {
-  max-width: 30rem;
+  max-width: 29rem;
 }
 
 

@@ -16,7 +16,8 @@ class App extends Component {
       email: '',
       phone: '',
       body: '',
-      height: 0
+      height: 0,
+      project: null
     }
   }
 
@@ -43,6 +44,10 @@ class App extends Component {
 
   changeBody(body) {
     this.setState({body});
+  }
+
+  renderProject(id) {
+    this.setState({project: id});
   }
 
   sendMessage() {
@@ -80,7 +85,10 @@ class App extends Component {
         />
         <About changeHeight={this.changeHeight.bind(this)} />
         <TechStack />
-        <Projects />
+        <Projects
+          renderProject={this.renderProject.bind(this)}
+          project={this.state.project}
+         />
         <Contact
           name={this.state.name}
           email={this.state.email}
