@@ -130,15 +130,39 @@ img {
 
 /* Techstack */
 .tech-container {
+  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 1px solid black;
+  align-items: left;
   padding: 4rem;
-  height: 100vh;
+  border: 1px solid black;
 }
 
-.tech-icon-wrapper {
+.tech-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid green;
+}
+
+.tech-wrapper p {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.tech-wrapper .small {
+  font-size: 2em;
+}
+
+.tech-wrapper .med {
+  font-size: 2em;
+}
+
+.tech-wrapper .large {
+  font-size: 2em;
+}
+
+/*.tech-icon-wrapper {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -153,11 +177,7 @@ img {
 .tech-icon-wrapper em {
   font-size: 8em;
   padding: 2rem 1.5rem;
-}
-
-.tech-icon-wrapper .add-size {
-  font-size: 9em;
-}
+}*/
 
 /* Projects */
 .projects-container {
