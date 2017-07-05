@@ -9,27 +9,26 @@ export default class TechStack extends Component {
         <div className="tech-wrapper">
           <p className="small">Html.</p>
           <p className="large">Angular 2.</p>
-          <p className="med">React.</p>
+          <p className="large">React.</p>
           <p className="small">Grunt.</p>
           <p className="large">TypeScript.</p>
-          <p className="small">Backbone.</p>
-          <p className="med">NodeJS.</p>
-          <p className="small">ExpressJS.</p>
-          <p className="small">MongoDB.</p>
-          <p className="small">MySQL.</p>
-          <p className="small">PostgreSQL.</p>
-          <p className="small">Jquery.</p>
-          <p className="small">Heroku.</p>
-          <p className="small">Git.</p>
-          <p className="small">Grunt.</p>
-          <p className="small">CSS3.</p>
-          <p className="small">Digital Ocean.</p>
-          <p className="small">React Native.</p>
-          <p className="small">AngularJS.</p>
-          <p className="small">D3.</p>
-          <p className="small">Auth0.</p>
-          <p className="small">Mocha/Chai.</p>
+          <p className="med">Backbone.</p>
+          <p className="large">NodeJS.</p>
+          <p className="med">PostgreSQL.</p>
+          <p className="med">CSS3.</p>
           <p className="small">Bootstrap.</p>
+          <p className="large">ExpressJS.</p>
+          <p className="med">MongoDB.</p>
+          <p className="med">Heroku.</p>
+          <p className="large">MySQL.</p>
+          <p className="large">Jquery.</p>
+          <p className="med">Digital Ocean.</p>
+          <p className="large">Git.</p>
+          <p className="small">D3.</p>
+          <p className="med">React Native.</p>
+          <p className="med">Auth0.</p>
+          <p className="large">AngularJS.</p>
+          <p className="med">Mocha/Chai.</p>
         </div>
       </div>
     );

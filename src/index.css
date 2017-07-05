@@ -150,15 +150,15 @@ body {
 }
 
 .tech-wrapper .small {
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .tech-wrapper .med {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .tech-wrapper .large {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 /*.tech-icon-wrapper {
