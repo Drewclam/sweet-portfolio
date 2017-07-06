@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import axios from 'axios';
 import './App.css';
 import Navbar from './components/Navbar';
@@ -46,7 +47,7 @@ class App extends Component {
     this.setState({body});
   }
 
-  renderProject(id) {
+  renderModal(id) {
     this.setState({project: id});
   }
 
@@ -86,9 +87,9 @@ class App extends Component {
         <About changeHeight={this.changeHeight.bind(this)} />
         <TechStack />
         <Projects
-          renderProject={this.renderProject.bind(this)}
+          renderModal={this.renderModal.bind(this)}
           project={this.state.project}
-         />
+        />
         <Contact
           name={this.state.name}
           email={this.state.email}

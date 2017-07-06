@@ -3,31 +3,31 @@ import ProjectInfo from './ProjectInfo';
 
 export default class Projects extends Component {
   render() {
-    const { renderProject }  = this.props;
+    const { renderModal }  = this.props;
 
     return (
       <div className="projects-container">
         <a name="projects"></a>
         <p className="section-title">Projects.</p>
         <div className="projects-wrapper">
-          <div className="project" onClick={() => renderProject(0)}>
+          <div className="project" onClick={() => renderModal(0)}>
             <h3>It's Cut Time</h3>
             <img src="https://puu.sh/wuo5m/5a47b0c5a4.png" alt="" />
           </div>
-          <div className="project" onClick={() => renderProject(1)}>
+          <div className="project" onClick={() => renderModal(1)}>
             <h3>Recipely</h3>
             <img src="https://puu.sh/wuo5m/5a47b0c5a4.png" alt="" />
           </div>
-          <div className="project" onClick={() => renderProject(2)}>
+          <div className="project" onClick={() => renderModal(2)}>
             <h3>FindAHike</h3>
             <img src="https://puu.sh/wuo5m/5a47b0c5a4.png" alt="" />
           </div>
-          <div className="project" onClick={() => renderProject(3)}>
+          <div className="project" onClick={() => renderModal(3)}>
             <h3>ng-Challenge</h3>
             <img src="https://puu.sh/wuo5m/5a47b0c5a4.png" alt="" />
           </div>
         </div>
-        <ProjectInfo project={this.props.project}/>
+        <ProjectInfo project={this.props.project} />
       </div>
     );
   }

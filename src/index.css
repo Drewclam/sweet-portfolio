@@ -208,6 +208,14 @@ body {
   max-width: 29rem;
 }
 
+.project-info {
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  height: 75vh;
+  background-color: black;
+}
+
 
 
 
