@@ -31,9 +31,6 @@ class App extends Component {
     console.log(this.state.height);
   }
 
-  hideModal() {
-    this.setState({project: null});
-  }
 
   changeName(name) {
     this.setState({name});
@@ -53,6 +50,10 @@ class App extends Component {
 
   renderModal(id) {
     this.setState({project: id});
+  }
+
+  hideModal() {
+    this.setState({project: null});
   }
 
   sendMessage() {
@@ -82,30 +83,31 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App" id="container">
-        <Header />
-        <Navbar
-          height={this.state.height}
-          changeHeight={this.changeHeight.bind(this)}
-        />
-        <About changeHeight={this.changeHeight.bind(this)} />
-        <TechStack />
-        <Projects
-          renderModal={this.renderModal.bind(this)}
-          hideModal={this.hideModal.bind(this)}
-          project={this.state.project}
-        />
-        <Contact
-          name={this.state.name}
-          email={this.state.email}
-          phone={this.state.phone}
-          body={this.state.body}
-          changeName={this.changeName.bind(this)}
-          changeEmail={this.changeEmail.bind(this)}
-          changePhone={this.changePhone.bind(this)}
-          changeBody={this.changeBody.bind(this)}
-          sendMessage={this.sendMessage.bind(this)}
-        />
+      <div className="App" id="app-container">
+        {this.state.project !== null && <div className="app-open-modal" onClick={this.hideModal}></div>}
+          <Header />
+          <Navbar
+            height={this.state.height}
+            changeHeight={this.changeHeight.bind(this)}
+          />
+          <About changeHeight={this.changeHeight.bind(this)} />
+          <TechStack />
+          <Projects
+            renderModal={this.renderModal.bind(this)}
+            hideModal={this.hideModal.bind(this)}
+            project={this.state.project}
+          />
+          <Contact
+            name={this.state.name}
+            email={this.state.email}
+            phone={this.state.phone}
+            body={this.state.body}
+            changeName={this.changeName.bind(this)}
+            changeEmail={this.changeEmail.bind(this)}
+            changePhone={this.changePhone.bind(this)}
+            changeBody={this.changeBody.bind(this)}
+            sendMessage={this.sendMessage.bind(this)}
+          />
       </div>
     );
   }
