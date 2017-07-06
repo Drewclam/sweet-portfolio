@@ -30,15 +30,13 @@ export default class Projects extends Component {
         <ProjectInfo
           hideModal={hideModal}
           project={project}
-         />
+        />
       </div>
     );
   }
 }
 
-// <span>A platform to bring local hairstylists directly to the user's door and manage appointment bookings.</span>
-// <span><h4>Notable Technologies</h4>Built with Angular 4, TypeScript, MySQL, Node.js, Express.js, Flexbox, Stripe</span>
-// <img src="https://puu.sh/wuo39/f19582444f.png" alt="" />
+
 // <div className="project">
   // <div className="project-info">
 

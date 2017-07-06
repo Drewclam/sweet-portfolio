@@ -16,17 +16,17 @@ export default class TechStack extends Component {
           <p className="large">NodeJS.</p>
           <p className="med">PostgreSQL.</p>
           <p className="med">CSS3.</p>
-          <p className="small">Bootstrap.</p>
           <p className="large">ExpressJS.</p>
+          <p className="small">Bootstrap.</p>
           <p className="med">MongoDB.</p>
           <p className="med">Heroku.</p>
           <p className="large">MySQL.</p>
           <p className="large">Jquery.</p>
           <p className="med">Digital Ocean.</p>
           <p className="large">Git.</p>
-          <p className="small">D3.</p>
           <p className="med">React Native.</p>
           <p className="med">Auth0.</p>
+          <p className="small">D3.</p>
           <p className="large">AngularJS.</p>
           <p className="med">Mocha/Chai.</p>
         </div>
@@ -36,14 +36,14 @@ export default class TechStack extends Component {
 }
         // <div className="tech-icon-wrapper">
           // <i className="icon-tech-javascript"></i>
-          // <i className="icon-tech-typescript"></i>
+          //
           // <i className="icon-tech-react"></i>
-          // <i className="icon-tech-angular"></i>
+
           // <i className="icon-tech-backbone"></i>
-          // <i className="icon-tech-nodejs"></i>
-          // <i className="icon-tech-expressjs"></i>
+          //
+          //
           // <i className="icon-tech-mongo"></i>
-          // <i className="icon-tech-mysql"></i>
+          //
           // <i className="icon-tech-postgres"></i>
           // <i className="icon-tech-jquery"></i>
           // <i className="icon-tech-grunt"></i>
