@@ -3,7 +3,7 @@ import ProjectInfo from './ProjectInfo';
 
 export default class Projects extends Component {
   render() {
-    const { renderModal }  = this.props;
+    const { renderModal, hideModal, project }  = this.props;
 
     return (
       <div className="projects-container">
@@ -27,7 +27,10 @@ export default class Projects extends Component {
             <img src="https://puu.sh/wuo5m/5a47b0c5a4.png" alt="" />
           </div>
         </div>
-        <ProjectInfo project={this.props.project} />
+        <ProjectInfo
+          hideModal={hideModal}
+          project={project}
+         />
       </div>
     );
   }

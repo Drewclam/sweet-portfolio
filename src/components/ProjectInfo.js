@@ -4,11 +4,12 @@ import onClickOutside from 'react-onclickoutside';
 class ProjectInfo extends Component {
 
   handleClickOutside() {
-    console.log('clicked outside');
+    const { hideModal } = this.props;
+    hideModal();
   }
 
   render() {
-    const { project, hideModal } = this.props;
+    const { project } = this.props;
 
     let projectInfo = {
       0: <h2>It's Cut Time</h2>,
@@ -19,7 +20,7 @@ class ProjectInfo extends Component {
 
     return (
       <div className="project-info">
-        {projectInfo[project]}
+        {project !== null && projectInfo[project]}
       </div>
     );
   }

@@ -31,6 +31,10 @@ class App extends Component {
     console.log(this.state.height);
   }
 
+  hideModal() {
+    this.setState({project: null});
+  }
+
   changeName(name) {
     this.setState({name});
   }
@@ -88,6 +92,7 @@ class App extends Component {
         <TechStack />
         <Projects
           renderModal={this.renderModal.bind(this)}
+          hideModal={this.hideModal.bind(this)}
           project={this.state.project}
         />
         <Contact
