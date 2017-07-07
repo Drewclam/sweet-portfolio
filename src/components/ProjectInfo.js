@@ -10,31 +10,65 @@ class ProjectInfo extends Component {
   render() {
     const { project } = this.props;
 
-    let projectInfo = {
-      0:
-      <div className="project-info">
-        <span className="project-info-title">It's Cut Time</span>
-        <img src="https://puu.sh/wDmM5/3a26f51c05.png" />
-        <div className="project-info-icons">
-          <i className="icon-tech-angular"></i>
-          <i className="icon-tech-typescript"></i>
-          <i className="icon-tech-mysql"></i>
-          <i className="icon-tech-nodejs"></i>
+    let projectData = {
+      title: {
+        0: 'It\'s Cut Time',
+        1: 'Recipely',
+        2: 'FindAHike',
+        3: 'ng-Challenge'
+      },
+      image: {
+        0: 'https://puu.sh/wDmM5/3a26f51c05.png',
+        1: 'https://puu.sh/wDoSw/c1ac86fc12.png'
+      },
+      icons: {
+        0: [
+          <i className="icon-tech-angular"></i>,
+          <i className="icon-tech-typescript"></i>,
+          <i className="icon-tech-mysql"></i>,
+          <i className="icon-tech-nodejs"></i>,
           <i className="icon-tech-expressjs"></i>
-        </div>
-        <div className="project-info-content-wrapper">
-          <span className="project-info-description">
-            A platform to bring local hairstylists directly to the user's door and manage appointment bookings.
-          </span>
-          <span className="project-info-github">Github</span>
-        </div>
-      </div>,
-      1: <div>Recipely</div>,
-      2: <div>FindAHike</div>,
-      3: <div>ngchallenge</div>
+        ],
+        1: [
+          <i className="icon-tech-react"></i>,
+          <i className="icon-tech-javascript"></i>,
+          <i className="icon-tech-postgres"></i>,
+          <i className="icon-tech-nodejs"></i>,
+          <i className="icon-tech-expressjs"></i>
+        ],
+        2: [
+          <i className="icon-tech-angular"></i>,
+          <i className="icon-tech-javascript"></i>,
+          <i className="icon-tech-mysql"></i>,
+          <i className="icon-tech-nodejs"></i>,
+          <i className="icon-tech-expressjs"></i>
+        ],
+        3: [
+          <i className="icon-tech-angular"></i>,
+          <i className="icon-tech-javascript"></i>,
+          <i className="icon-tech-mongo"></i>,
+          <i className="icon-tech-nodejs"></i>,
+          <i className="icon-tech-expressjs"></i>
+        ]
+      },
+      description: {
+        0: 'A platform to bring local hairstylists directly to the user\'s door and manage appointment bookings.'
+      }
     };
 
-    {return project !== null && projectInfo[project]}
+    {return project !== null && <div className="project-info">
+      <span className="project-info-title">{projectData.title[project]}</span>
+      <img src={projectData.image[project]}/>
+      <div className="project-info-icons">
+        {projectData.icons[project]}
+      </div>
+      <div className="project-info-content-wrapper">
+        <span className="project-info-description">
+          {projectData.description[project]}
+        </span>
+        <span className="project-info-github">Github</span>
+      </div>
+    </div>}
   }
 }
 
