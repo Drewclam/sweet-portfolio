@@ -19,7 +19,9 @@ class ProjectInfo extends Component {
       },
       image: {
         0: 'https://puu.sh/wDmM5/3a26f51c05.png',
-        1: 'https://puu.sh/wDoSw/c1ac86fc12.png'
+        1: 'https://puu.sh/wDoSw/c1ac86fc12.png',
+        2: 'https://puu.sh/wuqxK/846b3e0b54.png',
+        3: 'https://puu.sh/wuqGE/5c74da951e.png'
       },
       icons: {
         0: [
@@ -52,7 +54,10 @@ class ProjectInfo extends Component {
         ]
       },
       description: {
-        0: 'A platform to bring local hairstylists directly to the user\'s door and manage appointment bookings.'
+        0: 'A platform to bring local hairstylists directly to the user\'s door and manage appointment bookings.',
+        1: 'A mobile app that utilizes the phone\'s camera to generate recipes with food in the pictures you take.',
+        2: 'A web-app powered by the Trail API. Discover hiking trails near you, track completed hikes or save them on a wishlist for later.',
+        3: 'A tool for League of Legends enthusiasts to track win/loss ratios on challenger-tier players.'
       }
     };
 
