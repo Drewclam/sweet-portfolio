@@ -4,26 +4,21 @@ export default class Contact extends Component {
   render() {
     const { name, email, phone, body, changeName, changeEmail, changePhone, changeBody, sendMessage } = this.props;
     return (
-      <div>
+      <div className="contact-container">
         <a name="contact"></a>
-        <h1>Contact</h1>
-        <h4>Name</h4>
+        <p className="section-title">Contact.</p>
         <input
           value={name}
+          placeholder="Name"
           onChange={e => changeName(e.target.value)}
         />
-        <h4>Email</h4>
         <input
           value={email}
+          placeholder="Email"
           onChange={e => changeEmail(e.target.value)}
         />
-        <h4>Phone#</h4>
-        <input
-          value={phone}
-          onChange={e => changePhone(e.target.value)}
-        />
         <textarea
-          placeholder="body"
+          placeholder="Type a message..."
           value={body}
           onChange={e => changeBody(e.target.value)}
         >
