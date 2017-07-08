@@ -275,8 +275,30 @@ body {
   flex-direction: column;
   align-items: left;
   height: 100vh;
+  border: 1px solid black;
 }
 
+.contact-message-wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid green;
+  width: 95%;
+}
+
+.contact-message-meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-message-name {
+  /*flex: 1;*/
+  flex-basis: 40%;
+}
+
+.contact-message-email {
+  /*flex: 1;*/
+  flex-basis: 40%;
+}
 
 
 
