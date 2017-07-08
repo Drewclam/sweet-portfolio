@@ -37,7 +37,7 @@ export default class Contact extends Component {
             {sent
               ? <div className="contact-message-submit-confirmation">Sent. Thank you!</div>
               : (isSending
-                  ? <Loading />
+                  ? <div className="contact-message-submit-pending"><Loading /></div>
                   : <input className="contact-message-submit-btn" type="submit" />
                 )
             }

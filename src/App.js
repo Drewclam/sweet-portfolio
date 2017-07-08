@@ -68,7 +68,9 @@ class App extends Component {
   sendMessage(e) {
     // stop page reloading
     e.preventDefault();
+
     this.changeIsSending();
+
     axios({
       method: 'post',
       url: '/contact',

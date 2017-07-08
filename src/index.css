@@ -339,6 +339,9 @@ body {
   transition: 0.40s;
 }
 
+.contact-message-submit-pending {
+}
+
 .contact-message-submit-confirmation {
   display: flex;
   align-items: center;
