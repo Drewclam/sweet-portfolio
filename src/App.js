@@ -13,10 +13,10 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      name: null,
-      email: null,
-      phone: null,
-      body: null,
+      name: '',
+      email: '',
+      phone: '',
+      body: '',
       height: 0,
       project: null,
       sent: false
@@ -64,28 +64,26 @@ class App extends Component {
     // stop page reloading
     e.preventDefault();
 
-    const message = {
-      name: this.state.name,
-      email: this.state.email,
-      phone: this.state.phone,
-      text: this.state.body
-    };
-
     axios({
       method: 'post',
       url: '/contact',
       headers: {'Content-Type': 'application/json'},
-      data: message
+      data: {
+        name: this.state.name,
+        email: this.state.email,
+        phone: this.state.phone,
+        text: this.state.body
+      }
     })
     .then(res => {
-      console.log(res);
-      this.changeName(null);
-      this.changeEmail(null);
-      this.changeBody(null);
+      console.log('hey',this);
+      this.changeName('');
+      this.changeEmail('');
+      this.changeBody('');
       this.changeMessageState();
       console.log(this.state);
     })
-    .catch(err => console.log(err, message));
+    .catch(err => console.log(err));
   }
 
   render() {
