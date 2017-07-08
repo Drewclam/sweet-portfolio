@@ -7,7 +7,7 @@ export default class Navbar extends Component {
       <div className="navbar-container">
         <a href="#about">
           <div className="nav-outer">
-            {height >= 0 && height <= 605 && <div className="nav-inner"></div>}
+            {height <= 605 && <div className="nav-inner"></div>}
           </div>
         </a>
         <a href="#tech">
@@ -22,7 +22,7 @@ export default class Navbar extends Component {
         </a>
         <a href="#contact">
           <div className="nav-outer">
-            {height > 2500 && height <= 7367 && <div className="nav-inner"></div>}
+            {height > 2500 && <div className="nav-inner"></div>}
           </div>
         </a>
       </div>
