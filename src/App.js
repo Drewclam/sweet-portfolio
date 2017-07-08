@@ -15,7 +15,6 @@ class App extends Component {
     this.state = {
       name: '',
       email: '',
-      phone: '',
       body: '',
       height: 0,
       project: null,
@@ -39,10 +38,6 @@ class App extends Component {
 
   changeEmail(email) {
     this.setState({email});
-  }
-
-  changePhone(phone) {
-    this.setState({phone});
   }
 
   changeBody(body) {
@@ -78,7 +73,6 @@ class App extends Component {
       data: {
         name: this.state.name,
         email: this.state.email,
-        phone: this.state.phone,
         text: this.state.body
       }
     })
@@ -110,13 +104,11 @@ class App extends Component {
           <Contact
             name={this.state.name}
             email={this.state.email}
-            phone={this.state.phone}
             body={this.state.body}
             isSending={this.state.isSending}
             sent={this.state.sent}
             changeName={this.changeName.bind(this)}
             changeEmail={this.changeEmail.bind(this)}
-            changePhone={this.changePhone.bind(this)}
             changeBody={this.changeBody.bind(this)}
             sendMessage={this.sendMessage.bind(this)}
           />

@@ -3,7 +3,7 @@ import Loading from 'react-loading-animation';
 
 export default class Contact extends Component {
   render() {
-    const { name, email, phone, body, changeName, changeEmail, changePhone, changeBody, sendMessage, isSending, sent } = this.props;
+    const { name, email, body, changeName, changeEmail, changeBody, sendMessage, isSending, sent } = this.props;
     return (
       <div className="contact-container">
         <a name="contact"></a>
@@ -15,6 +15,7 @@ export default class Contact extends Component {
               value={name}
               placeholder="Name"
               onChange={e => changeName(e.target.value)}
+              disabled={sent===true}
               required
             />
             <input
@@ -22,6 +23,7 @@ export default class Contact extends Component {
               value={email}
               placeholder="Email"
               onChange={e => changeEmail(e.target.value)}
+              disabled={sent===true}
               required
             />
           </div>
@@ -30,6 +32,7 @@ export default class Contact extends Component {
             placeholder="type a message..."
             value={body}
             onChange={e => changeBody(e.target.value)}
+            disabled={sent===true}
             required
           >
           </textarea>

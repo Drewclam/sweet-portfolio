@@ -297,6 +297,10 @@ body {
   border: 1px solid #aaaaaa;
 }
 
+.contact-message-name:disabled::placeholder {
+  color: #e0e0e0;
+}
+
 .contact-message-email {
   /*flex: 1;*/
   height: 2rem;
@@ -306,6 +310,10 @@ body {
   border: 1px solid #aaaaaa;
 }
 
+.contact-message-email:disabled::placeholder {
+  color: #e0e0e0;
+}
+
 .contact-message-body {
   margin-top: 3rem;
   padding: 1rem;
@@ -313,6 +321,10 @@ body {
   font-size: 16px;
   border: 1px solid #aaaaaa;
   resize: none;
+}
+
+.contact-message-body:disabled::placeholder {
+  color: #e0e0e0;
 }
 
 .contact-message-submit-wrapper {
