@@ -192,7 +192,6 @@ body {
   flex-direction: column-reverse;
   cursor: pointer;
   padding: 1rem 0;
-  border: 1px solid black;
   max-width: 45%;
 }
 
