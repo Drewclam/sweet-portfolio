@@ -13,10 +13,10 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      name: '',
-      email: '',
-      phone: '',
-      body: '',
+      name: null,
+      email: null,
+      phone: null,
+      body: null,
       height: 0,
       project: null,
       sent: false
@@ -71,22 +71,20 @@ class App extends Component {
       text: this.state.body
     };
 
-    this.setState({
-      name: '',
-      email: '',
-      phone: '',
-      body: ''
-    });
-
-    this.changeMessageState();
-
     axios({
       method: 'post',
       url: '/contact',
       headers: {'Content-Type': 'application/json'},
       data: message
     })
-    .then(res => console.log(res))
+    .then(res => {
+      console.log(res);
+      this.changeName(null);
+      this.changeEmail(null);
+      this.changeBody(null);
+      this.changeMessageState();
+      console.log(this.state);
+    })
     .catch(err => console.log(err, message));
   }
 
