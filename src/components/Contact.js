@@ -23,7 +23,8 @@ export default class Contact extends Component {
             />
           </div>
           <textarea
-            placeholder="Type a message..."
+            className="contact-message-body"
+            placeholder="type a message..."
             value={body}
             onChange={e => changeBody(e.target.value)}
           >

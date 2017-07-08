@@ -292,13 +292,21 @@ body {
 
 .contact-message-name {
   /*flex: 1;*/
+  height: 2rem;
+  font-size: 16px;
   flex-basis: 40%;
 }
 
 .contact-message-email {
   /*flex: 1;*/
+  height: 2rem;
+  font-size: 16px;
   flex-basis: 40%;
 }
 
+.contact-message-body {
+  height: 20rem;
+  font-size: 16px;
+}
 
 
