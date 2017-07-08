@@ -41,7 +41,6 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /*border: 1px solid black;*/
   margin-right: 2rem;
 }
 
@@ -76,7 +75,6 @@ body {
 
 .about-container .profile-pic {
   max-width: 22rem;
-  /*border: 1px solid black;*/
   border-radius: 3px;
   margin-top: 3rem;
 }
@@ -87,7 +85,6 @@ body {
   text-align: left;
   margin-top: 7rem;
   margin-left: 6rem;
-  /*border: 1px solid brown;*/
   height: 60%;
   width: 50%;
 }
@@ -148,14 +145,12 @@ body {
   flex-direction: column;
   align-items: left;
   padding: 5rem 6rem;
-  border: 1px solid black;
 }
 
 .tech-wrapper {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
-  /*border: 1px solid green;*/
   width: 95%;
 }
 
@@ -163,7 +158,6 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   padding: 0 3px;
-  /*border: 1px solid red;*/
   height: 15px;
 }
 
@@ -194,7 +188,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 80vw;
-  border: 1px solid green;
 }
 
 
@@ -204,13 +197,10 @@ body {
   height: 33%;
   cursor: pointer;
   padding: 1rem 0;
-  border: 1px solid black;
 }
 
 .project img {
-  /*max-width: 29rem;*/
   max-height: 19rem;
-  border: 1px solid #e2e2e2;
 }
 
 /* Project Info */

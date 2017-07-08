@@ -11,7 +11,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 
-class App extends Component {
+export default class App extends Component {
   constructor() {
     super();
     this.state = {
@@ -31,7 +31,6 @@ class App extends Component {
 
   changeHeight(height = window.pageYOffset) {
     this.setState({height});
-    console.log(this.state.height);
   }
 
   changeName(name) {
@@ -119,5 +118,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
