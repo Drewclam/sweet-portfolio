@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import onClickOutside from 'react-onclickoutside';
 import itsCutTime1 from '../images/itsCutTime1.png';
-import ngChallenge1 from '../images/ngChallenge1.png';
 import recipely1 from '../images/recipely1.png';
+import findAHike1 from '../images/findAHike1.png';
+import ngChallenge1 from '../images/ngChallenge1.png';
 
 class ProjectInfo extends Component {
 
@@ -23,7 +24,7 @@ class ProjectInfo extends Component {
       image: {
         0: itsCutTime1,
         1: recipely1,
-        2: 'https://puu.sh/wuqxK/846b3e0b54.png',
+        2: findAHike1,
         3: ngChallenge1
       },
       icons: {
