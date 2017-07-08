@@ -181,26 +181,38 @@ body {
   align-items: left;
 }
 
-
 .projects-wrapper {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 80vw;
 }
-
 
 .project {
   display: flex;
   flex-direction: column-reverse;
-  height: 33%;
   cursor: pointer;
   padding: 1rem 0;
+  border: 1px solid black;
+  max-width: 45%;
 }
 
-.project img {
+.project-left {
+  margin-right: 2rem;
+}
+
+.project-right {
+  margin-left: 2rem;
+}
+
+.project-title {
+  padding-top: 1rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.project-thumb {
   max-height: 19rem;
+  max-width: 100%;
 }
 
 /* Project Info */
