@@ -76,12 +76,10 @@ class App extends Component {
       }
     })
     .then(res => {
-      console.log('hey',this);
       this.changeName('');
       this.changeEmail('');
       this.changeBody('');
       this.changeMessageState();
-      console.log(this.state);
     })
     .catch(err => console.log(err));
   }
