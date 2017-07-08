@@ -8,6 +8,8 @@ import Header from './components/Header';
 import TechStack from './components/TechStack';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
+
 
 class App extends Component {
   constructor() {
@@ -89,29 +91,30 @@ class App extends Component {
     return (
       <div className="App" id="app-container">
         {this.state.project !== null && <div className="app-open-modal" onClick={this.hideModal}></div>}
-          <Header />
-          <Navbar
-            height={this.state.height}
-            changeHeight={this.changeHeight.bind(this)}
-          />
-          <About changeHeight={this.changeHeight.bind(this)} />
-          <TechStack />
-          <Projects
-            renderModal={this.renderModal.bind(this)}
-            hideModal={this.hideModal.bind(this)}
-            project={this.state.project}
-          />
-          <Contact
-            name={this.state.name}
-            email={this.state.email}
-            body={this.state.body}
-            isSending={this.state.isSending}
-            sent={this.state.sent}
-            changeName={this.changeName.bind(this)}
-            changeEmail={this.changeEmail.bind(this)}
-            changeBody={this.changeBody.bind(this)}
-            sendMessage={this.sendMessage.bind(this)}
-          />
+        <Header />
+        <Navbar
+          height={this.state.height}
+          changeHeight={this.changeHeight.bind(this)}
+        />
+        <About changeHeight={this.changeHeight.bind(this)} />
+        <TechStack />
+        <Projects
+          renderModal={this.renderModal.bind(this)}
+          hideModal={this.hideModal.bind(this)}
+          project={this.state.project}
+        />
+        <Contact
+          name={this.state.name}
+          email={this.state.email}
+          body={this.state.body}
+          isSending={this.state.isSending}
+          sent={this.state.sent}
+          changeName={this.changeName.bind(this)}
+          changeEmail={this.changeEmail.bind(this)}
+          changeBody={this.changeBody.bind(this)}
+          sendMessage={this.sendMessage.bind(this)}
+        />
+        <Footer />
       </div>
     );
   }
