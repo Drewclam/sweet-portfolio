@@ -194,24 +194,22 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 80vw;
+  border: 1px solid green;
 }
 
 
 .project {
   display: flex;
   flex-direction: column-reverse;
-  align-items: center;
   height: 33%;
   cursor: pointer;
   padding: 1rem 0;
+  border: 1px solid black;
 }
 
-/*.project:hover {
-  background-color: #efeded;
-}*/
-
 .project img {
-  max-width: 29rem;
+  /*max-width: 29rem;*/
+  max-height: 19rem;
   border: 1px solid #e2e2e2;
 }
 
@@ -220,7 +218,7 @@ body {
   position: fixed;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  align-items: center;
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
@@ -239,9 +237,8 @@ body {
   padding: 1rem 0;
 }
 
-.project-info img {
+.project-info-image {
   max-height: 20rem;
-  border: 1px solid #e2e2e2;
 }
 
 .project-info-icons {
