@@ -58,6 +58,12 @@ class ProjectInfo extends Component {
         1: 'A mobile app that utilizes the phone\'s camera to generate recipes with food in the pictures you take.',
         2: 'A web-app powered by the Trail API. Discover hiking trails near you, track completed hikes or save them on a wishlist for later.',
         3: 'A tool for League of Legends enthusiasts to track win/loss ratios on challenger-tier players.'
+      },
+      gitHub: {
+        0: 'https://github.com/oxford-commas/dingdong-its-cut-time',
+        1: 'https://github.com/findahike/recipely',
+        2: 'https://github.com/findahike/findahike',
+        3: 'https://github.com/Drewclam/ng-Challenge'
       }
     };
 
@@ -71,7 +77,7 @@ class ProjectInfo extends Component {
         <span className="project-info-description">
           {projectData.description[project]}
         </span>
-        <span className="project-info-github">Github</span>
+        <a className="project-info-github" href={projectData.gitHub[project]}>Github</a>
       </div>
     </div>}
   }

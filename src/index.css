@@ -274,6 +274,11 @@ body {
   cursor: pointer;
   width: 10%;
   padding: 1rem 0;
+  text-decoration: none;
+}
+
+.project-info-github:visited {
+  color: black;
 }
 
 /* Contact */
