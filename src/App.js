@@ -60,7 +60,10 @@ class App extends Component {
     this.setState({project: null});
   }
 
-  sendMessage() {
+  sendMessage(e) {
+    // stop page reloading
+    e.preventDefault();
+
     const message = {
       name: this.state.name,
       email: this.state.email,
