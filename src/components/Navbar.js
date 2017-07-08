@@ -12,17 +12,17 @@ export default class Navbar extends Component {
         </a>
         <a href="#tech">
           <div className="nav-outer">
-            {height >= 605 && height <= 1697 && <div className="nav-inner"></div>}
+            {height > 605 && height <= 1551 && <div className="nav-inner"></div>}
           </div>
         </a>
         <a href="#projects">
           <div className="nav-outer">
-            {height >= 1697 && height <= 7367 && <div className="nav-inner"></div>}
+            {height > 1551 && height <= 2500 && <div className="nav-inner"></div>}
           </div>
         </a>
         <a href="#contact">
           <div className="nav-outer">
-            {height >= 7367 && height <= 7367 && <div className="nav-inner"></div>}
+            {height > 2500 && height <= 7367 && <div className="nav-inner"></div>}
           </div>
         </a>
       </div>
