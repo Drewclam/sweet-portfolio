@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import onClickOutside from 'react-onclickoutside';
 import itsCutTime1 from '../images/itsCutTime1.png';
 import ngChallenge1 from '../images/ngChallenge1.png';
+import recipely1 from '../images/recipely1.png';
 
 class ProjectInfo extends Component {
 
@@ -21,7 +22,7 @@ class ProjectInfo extends Component {
       },
       image: {
         0: itsCutTime1,
-        1: 'https://puu.sh/wDoSw/c1ac86fc12.png',
+        1: recipely1,
         2: 'https://puu.sh/wuqxK/846b3e0b54.png',
         3: ngChallenge1
       },
@@ -59,7 +60,7 @@ class ProjectInfo extends Component {
         0: 'A communication platform for users to connect with hairstylists in their area. Enter your location and find a stylist that\'s right for you in your vicinity. Once you have viewed their profile and styles they offer, message them and book your appointment through our web-app. See confirmation when the stylist has accepted your booking and are on their way to your location! Payment transactions are handled using Stripe.',
         1: 'Added new features to a legacy mobile app Recipely. Recipely uses pictures taken with your phone and detects the food within! Recipes are generated which contain those specific foods in them for discovering new recipes to create just with the food at hand. Implemented a grocery list feature to store a recipe\'s ingredients so you know what to buy at the grocery store. Also added a feature that allows users to create their own recipes using camera photos.',
         2: 'A web-app powered by the Trail API. Discover hiking trails near your location! Keep track of hikes you have completed or save hikes for later on your wish-list. Provided is a Google map of the hike and its surrounding area for your reference.',
-        3: 'A one-click app to gather and display League of Legends Challenger tier player data. Help players see what the professionals are playing right now and make informed decisions on what champions to play next. View Challenger players\' frequently used champions, total wins and losses or their total win-loss ratio. '
+        3: 'A one-click app to gather and display League of Legends Challenger tier player data. Help players see what the professionals are playing right now and make informed decisions on what champions to play next. View Challenger players\' frequently used champions, total wins and losses or their total win-loss ratio.'
       },
       gitHub: {
         0: 'https://github.com/oxford-commas/dingdong-its-cut-time',
