@@ -29,7 +29,9 @@ export default class Contact extends Component {
             onChange={e => changeBody(e.target.value)}
           >
           </textarea>
-          <div onClick={sendMessage}>Submit</div>
+          <div className="contact-message-submit-wrapper" onClick={sendMessage}>
+            <div className="contact-message-submit-btn">Submit</div>
+          </div>
         </div>
       </div>
     );
