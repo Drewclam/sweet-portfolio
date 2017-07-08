@@ -19,6 +19,7 @@ class App extends Component {
       body: '',
       height: 0,
       project: null,
+      isSending: false,
       sent: false
     }
   }
@@ -52,6 +53,10 @@ class App extends Component {
     this.setState({sent: true});
   }
 
+  changeIsSending() {
+    this.setState({isSending: true});
+  }
+
   renderModal(id) {
     this.setState({project: id});
   }
@@ -63,7 +68,7 @@ class App extends Component {
   sendMessage(e) {
     // stop page reloading
     e.preventDefault();
-
+    this.changeIsSending();
     axios({
       method: 'post',
       url: '/contact',
@@ -105,6 +110,7 @@ class App extends Component {
             email={this.state.email}
             phone={this.state.phone}
             body={this.state.body}
+            isSending={this.state.isSending}
             sent={this.state.sent}
             changeName={this.changeName.bind(this)}
             changeEmail={this.changeEmail.bind(this)}

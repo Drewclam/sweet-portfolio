@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import Loading from 'react-loading-animation';
 
 export default class Contact extends Component {
   render() {
-    const { name, email, phone, body, changeName, changeEmail, changePhone, changeBody, sendMessage, sent } = this.props;
+    const { name, email, phone, body, changeName, changeEmail, changePhone, changeBody, sendMessage, isSending, sent } = this.props;
     return (
       <div className="contact-container">
         <a name="contact"></a>
@@ -33,8 +34,13 @@ export default class Contact extends Component {
           >
           </textarea>
           <div className="contact-message-submit-wrapper">
-            {sent ?
-              <div className="contact-message-submit-confirmation">Sent. Thank you!</div> : <input className="contact-message-submit-btn" type="submit" />}
+            {sent
+              ? <div className="contact-message-submit-confirmation">Sent. Thank you!</div>
+              : (isSending
+                  ? <Loading />
+                  : <input className="contact-message-submit-btn" type="submit" />
+                )
+            }
           </div>
         </form>
       </div>
