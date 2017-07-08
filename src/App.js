@@ -18,7 +18,8 @@ class App extends Component {
       phone: '',
       body: '',
       height: 0,
-      project: null
+      project: null,
+      sent: false
     }
   }
 
@@ -30,7 +31,6 @@ class App extends Component {
     this.setState({height});
     console.log(this.state.height);
   }
-
 
   changeName(name) {
     this.setState({name});
@@ -46,6 +46,10 @@ class App extends Component {
 
   changeBody(body) {
     this.setState({body});
+  }
+
+  changeMessageState() {
+    this.setState({sent: true});
   }
 
   renderModal(id) {
@@ -70,6 +74,8 @@ class App extends Component {
       phone: '',
       body: ''
     });
+
+    this.changeMessageState();
 
     axios({
       method: 'post',
@@ -102,6 +108,7 @@ class App extends Component {
             email={this.state.email}
             phone={this.state.phone}
             body={this.state.body}
+            sent={this.state.sent}
             changeName={this.changeName.bind(this)}
             changeEmail={this.changeEmail.bind(this)}
             changePhone={this.changePhone.bind(this)}

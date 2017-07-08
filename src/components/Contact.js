@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import checkmark from '../images/checkmark.gif';
 
 export default class Contact extends Component {
   render() {
-    const { name, email, phone, body, changeName, changeEmail, changePhone, changeBody, sendMessage } = this.props;
+    const { name, email, phone, body, changeName, changeEmail, changePhone, changeBody, sendMessage, sent } = this.props;
     return (
       <div className="contact-container">
         <a name="contact"></a>
@@ -30,7 +31,7 @@ export default class Contact extends Component {
           >
           </textarea>
           <div className="contact-message-submit-wrapper" onClick={sendMessage}>
-            <div className="contact-message-submit-btn">Submit</div>
+            {sent ? <div className="contact-message-submit-confirmation"><img src={checkmark} />Sent</div> : <div className="contact-message-submit-btn">Submit</div>}
           </div>
         </div>
       </div>
