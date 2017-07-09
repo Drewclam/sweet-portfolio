@@ -16,7 +16,7 @@ body {
 }
 
 .section-title {
-  font-size: 3.5em;
+  font-size: 4vw;
   font-weight: bold;
 }
 
@@ -24,7 +24,7 @@ body {
 .header-container {
   display: flex;
   flex-direction: row;
-  font-size: 20px;
+  font-size: 2vw;
   height: 4.5rem;
 }
 
@@ -71,10 +71,11 @@ body {
   align-items: flex-start;
   /*border: 1px solid red;*/
   height: 100vh;
+  width: 100%;
 }
 
 .about-container .profile-pic {
-  max-width: 22rem;
+  max-width: 25vw;
   border-radius: 3px;
   margin-top: 3rem;
 }
@@ -91,8 +92,9 @@ body {
 
 .about-container .about-blurb-container .blurb-content {
   margin-top: -2rem;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-style: bold;
+  width: 100%;
 }
 
 .blurb-content a {
@@ -162,15 +164,15 @@ body {
 }
 
 .tech-wrapper .small {
-  font-size: 1em;
+  font-size: 1vw;
 }
 
 .tech-wrapper .med {
-  font-size: 2em;
+  font-size: 2vw;
 }
 
 .tech-wrapper .large {
-  font-size: 3em;
+  font-size: 3vw;
 }
 
 /* Projects */
@@ -233,13 +235,13 @@ body {
 
 .project-info-title {
   text-align: left;
-  font-size: 2em;
+  font-size: 2vw;
   font-weight: bold;
   padding: 1rem 0;
 }
 
 .project-info-image {
-  max-height: 20rem;
+  max-height: 40vh;
 }
 
 .project-info-icons {
@@ -262,7 +264,7 @@ body {
 }
 
 .project-info-description {
-  font-size: 0.75em;
+  font-size: 0.90vw;
   width: 80%;
 }
 
