@@ -2,8 +2,15 @@ body {
   margin: 0;
   padding: 0;
   /*font-family: 'Arial', sans-serif;*/
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: 'Lato', sans-serif;
   height: 100%;
+  position: relative;
+}
+
+html {
+  min-width: 1042px;
+
 }
 
 .app-open-modal {
@@ -67,26 +74,26 @@ body {
 /* About */
 .about-container {
   display: flex;
-  padding: 0 2rem;
+  padding: 0 3vw;
   align-items: flex-start;
-  /*border: 1px solid red;*/
   height: 100vh;
+  overflow: hidden;
 }
 
 .about-container .profile-pic {
+  flex: 1;
   max-width: 22rem;
-  border-radius: 3px;
   margin-top: 3rem;
 }
 
 .about-container .about-blurb-container {
+  flex: 1;
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-top: 7rem;
-  margin-left: 6rem;
-  height: 60%;
-  width: 50%;
+  margin-top: 7.5vw;
+  margin-left: 6vw;
+  margin-right: 13vw;
 }
 
 .about-container .about-blurb-container .blurb-content {
@@ -105,12 +112,19 @@ body {
 
 /* Navbar */
 .navbar-container {
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-direction: column;
   right: 3rem;
-  top: 25rem;
+  top: 20rem;
   z-index: 1;
+}
+
+.navbar-wrapper {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  min-width: 1042px;
 }
 
 .navbar-container .nav-outer {
@@ -384,3 +398,4 @@ body {
   color: #a3a3a3;
   align-items: center;
 }
+  flex-direction: column;
