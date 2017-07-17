@@ -6,11 +6,11 @@ body {
   font-family: 'Lato', sans-serif;
   height: 100%;
   position: relative;
+  z-index: 3;
 }
 
 html {
   min-width: 1042px;
-
 }
 
 .app-open-modal {
@@ -19,7 +19,7 @@ html {
   width: 100%;
   background-color: grey;
   opacity: 0.5;
-  z-index: 2;
+  z-index: 998;
 }
 
 .section-title {
@@ -117,7 +117,7 @@ html {
   flex-direction: column;
   right: 3rem;
   top: 20rem;
-  z-index: 1;
+  z-index: 10;
 }
 
 .navbar-wrapper {
@@ -125,6 +125,7 @@ html {
   width: 100vw;
   position: fixed;
   min-width: 1042px;
+  z-index: -1;
 }
 
 .navbar-container .nav-outer {
@@ -241,7 +242,7 @@ html {
   background-color: white;
   border: 1px solid #e2e2e2;
   padding: 1rem 4rem;
-  z-index: 3;
+  z-index: 999;
   width: 50%;
 }
 

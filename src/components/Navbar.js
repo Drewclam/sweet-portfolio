@@ -4,8 +4,8 @@ export default class Navbar extends Component {
   render() {
     const { height } = this.props;
     return (
-      <div className="navbar-wrapper">
-        <div className="navbar-container">
+      <div className="navbar-container">
+        <div className="navbar-wrapper">
           <a href="#about">
             <div className="nav-outer">
               {height <= 605 && <div className="nav-inner"></div>}
