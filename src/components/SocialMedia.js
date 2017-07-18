@@ -11,14 +11,12 @@ export default class SocialMedia extends Component {
 
     return (
       <div className="header-container">
-        <a name="about"></a>
-        <span className="header-name">Andrew Lam</span>
         <div className="social-media-container">
           {socialUrls.map(url =>
             <div className="social-media-item">
               <SocialIcon
                 url={url}
-                color="black"
+                color="white"
                 style={{ height: 35, width: 35 }}
               />
             </div>

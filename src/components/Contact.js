@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from './Footer';
 import Loading from 'react-loading-animation';
 
 export default class Contact extends Component {
@@ -7,7 +8,7 @@ export default class Contact extends Component {
     return (
       <div className="contact-container">
         <a name="contact"></a>
-        <p className="section-title">Contact.</p>
+        <p className="section-title alt-section-title">Contact.</p>
         <form onSubmit={sendMessage} className="contact-message-wrapper">
           <div className="contact-message-meta">
             <input
@@ -41,11 +42,12 @@ export default class Contact extends Component {
               ? <div className="contact-message-submit-confirmation">Sent. Thank you!</div>
               : (isSending
                   ? <div className="contact-message-submit-pending"><Loading /></div>
-                  : <input className="contact-message-submit-btn" type="submit" />
+                  : <input className="contact-message-submit-btn" type="submit" value="Send" />
                 )
             }
           </div>
         </form>
+        <Footer />
       </div>
     );
   }

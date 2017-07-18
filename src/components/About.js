@@ -6,6 +6,7 @@ export default class About extends Component {
   render() {
     return (
       <div className="about-container">
+        <a name="about"></a>
         <img className="profile-pic" src={picture} alt="" />
         <div className="about-blurb-container">
           <p className="section-title">Hello.</p><p className="blurb-content">Hi! My name is Andrew. I'm a full-stack JavaScript software engineer. I'm passionate about Angular 4, AngularJS, React and React Native. In my spare time I ... Want to check out what I've been working on? Check me out on <a href="github.com/drewclam">github</a>!</p>

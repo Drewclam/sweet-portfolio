@@ -7,8 +7,6 @@ import About from './components/About';
 import TechStack from './components/TechStack';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
-
 
 export default class App extends Component {
   constructor() {
@@ -111,7 +109,6 @@ export default class App extends Component {
           changeBody={this.changeBody.bind(this)}
           sendMessage={this.sendMessage.bind(this)}
         />
-        <Footer />
       </div>
     );
   }

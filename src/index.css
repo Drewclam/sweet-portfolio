@@ -27,6 +27,11 @@ html {
   font-weight: bold;
 }
 
+.alt-section-title {
+  color: white;
+  margin-left: 13vw;
+}
+
 /* Header */
 .header-container {
   display: flex;
@@ -130,7 +135,7 @@ html {
 
 .navbar-container .nav-outer {
   cursor: pointer;
-  background-color: white;
+  background-color: transparent;
   border: 3px solid grey;
   border-radius: 50%;
   height: 1rem;
@@ -153,18 +158,11 @@ html {
 }
 
 /* Techstack */
-.tech-section-title {
-  color: white;
-  margin-left: 3rem;
-}
-
 .tech-container {
   height: 100vh;
   display: flex;
-  align-items: center;
   flex-direction: column;
   align-items: left;
-  padding: 7rem 3rem;
   background-color: black;
 }
 
@@ -172,9 +170,9 @@ html {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
-  width: 58%;
+  width: 59%;
   margin-top: 2rem;
-  margin-left: 13rem;
+  margin-left: 24vw;
 }
 
 .tech-wrapper p {
@@ -303,31 +301,29 @@ html {
 
 /* Contact */
 .contact-container {
-  padding: 5rem 6rem;
   display: flex;
   flex-direction: column;
   align-items: left;
   height: 100vh;
+  background-color: black;
 }
 
 .contact-message-wrapper {
   display: flex;
   flex-direction: column;
-  width: 95%;
+  width: 50%;
+  margin-left: 24vw;
 }
 
 .contact-message-meta {
   display: flex;
-  justify-content: space-between;
 }
 
 .contact-message-name {
-  /*flex: 1;*/
   height: 2rem;
   font-size: 16px;
-  flex-basis: 40%;
+  flex-basis: 50%;
   padding-left: 0.5rem;
-  border: 1px solid #aaaaaa;
 }
 
 .contact-message-name:disabled::placeholder {
@@ -335,12 +331,11 @@ html {
 }
 
 .contact-message-email {
-  /*flex: 1;*/
   height: 2rem;
   font-size: 16px;
-  flex-basis: 40%;
+  flex-basis: 50%;
   padding-left: 0.5rem;
-  border: 1px solid #aaaaaa;
+  margin-left: 2rem;
 }
 
 .contact-message-email:disabled::placeholder {
@@ -348,12 +343,13 @@ html {
 }
 
 .contact-message-body {
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding: 1rem;
-  height: 20rem;
+  height: 15rem;
   font-size: 16px;
   border: 1px solid #aaaaaa;
   resize: none;
+
 }
 
 .contact-message-body:disabled::placeholder {
@@ -367,20 +363,23 @@ html {
 }
 
 .contact-message-submit-btn {
-  background-color: black;
-  color: white;
-  border: 3px solid black;
+  background-color: white;
+  color: black;
+  border: 3px solid white;
   border-radius: 8px;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: bold;
   padding: 0.5rem;
   cursor: pointer;
+  margin-top: 1rem;
+  width: 30%;
   transition: 0.40s;
 }
 
 .contact-message-submit-btn:hover {
-  border: 3px solid black;
-  background-color: white;
-  color: black;
+  border: 3px solid white;
+  background-color: black;
+  color: white;
   transition: 0.40s;
 }
 
@@ -394,15 +393,18 @@ html {
 
 /* Footer */
 .footer-container {
-  height: 4em;
-  margin-top: -3em;
+  height: 5rem;
+  margin-top: 6rem;
+  padding: 0 8rem;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: #303030;
+  justify-content: space-between;
+  background-color: black;
+  width: 79%;
 }
 
 .footer-content {
-  color: #a3a3a3;
+  color: white;
   align-items: center;
+  margin-left: 3vw;
 }
