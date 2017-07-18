@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import axios from 'axios';
 import './App.css';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import TechStack from './components/TechStack';
+import ProjectSlider from './components/ProjectSlider';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
@@ -95,11 +95,7 @@ export default class App extends Component {
         />
         <About changeHeight={this.changeHeight.bind(this)} />
         <TechStack />
-        <Projects
-          renderModal={this.renderModal.bind(this)}
-          hideModal={this.hideModal.bind(this)}
-          project={this.state.project}
-        />
+        <ProjectSlider />
         <Contact
           name={this.state.name}
           email={this.state.email}
@@ -115,3 +111,8 @@ export default class App extends Component {
     );
   }
 }
+        // <Projects
+        //   renderModal={this.renderModal.bind(this)}
+        //   hideModal={this.hideModal.bind(this)}
+        //   project={this.state.project}
+        // />

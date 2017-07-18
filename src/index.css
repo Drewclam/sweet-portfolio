@@ -25,11 +25,16 @@ html {
 .section-title {
   font-size: 3.5em;
   font-weight: bold;
+  margin-top: 8rem;
 }
 
 .alt-section-title {
   color: white;
   margin-left: 13vw;
+}
+
+.project-section-title {
+  margin-left: 65vw;
 }
 
 /* Header */
@@ -87,8 +92,9 @@ html {
 
 .about-container .profile-pic {
   flex: 1;
-  max-width: 22rem;
-  margin-top: 4rem;
+  max-width: 23rem;
+  margin-top: 2.5rem;
+  margin-left: 3vw;
 }
 
 .about-container .about-blurb-container {
@@ -96,7 +102,7 @@ html {
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-top: 7.5vw;
+  margin-top: 7rem;
   margin-left: 6vw;
   margin-right: 13vw;
 }
@@ -104,7 +110,6 @@ html {
 .about-container .about-blurb-container .blurb-content {
   margin-top: -2rem;
   font-size: 1.5rem;
-  font-style: bold;
 }
 
 .blurb-content a {
@@ -170,7 +175,7 @@ html {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
-  width: 59%;
+  width: 55%;
   margin-top: 2rem;
   margin-left: 24vw;
 }
@@ -191,6 +196,58 @@ html {
 .tech-wrapper .large {
   font-size: 2rem;
   font-weight: bold;
+}
+
+/* ProjectSlider */
+.project-slider-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  /*overflow: hidden;*/
+}
+
+.project-slider-wrapper {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.project-slider {
+  /*border: 1px solid red;*/
+  width: 88%;
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-slide {
+  display: flex;
+  flex-direction: row;
+  max-height: 15vw;
+}
+
+.project-slider-thumb {
+  border: 1px solid grey;
+}
+
+.project-slider-controls {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: grey;
+  margin-left: 0.5vw;
+}
+
+.project-slider-controls p {
+  cursor: pointer;
+}
+
+* { /* for react-slick */
+  /*min-height: 0;*/
+  /*min-width: 0;*/
 }
 
 /* Projects */
