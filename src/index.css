@@ -157,6 +157,10 @@ html {
   border-radius: 50%;
 }
 
+a [ id= "about" ]:target ~ div.about-container {
+  transform: translateY(0px);
+}
+
 /* Techstack */
 .tech-container {
   height: 100vh;

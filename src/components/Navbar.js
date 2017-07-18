@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import smoothScroll from 'smoothscroll';
 
 export default class Navbar extends Component {
   render() {
@@ -6,26 +7,18 @@ export default class Navbar extends Component {
     return (
       <div className="navbar-container">
         <div className="navbar-wrapper">
-          <a href="#about">
-            <div className="nav-outer">
-              {height <= 605 && <div className="nav-inner"></div>}
-            </div>
-          </a>
-          <a href="#tech">
-            <div className="nav-outer">
-              {height > 605 && height <= 1551 && <div className="nav-inner"></div>}
-            </div>
-          </a>
-          <a href="#projects">
-            <div className="nav-outer">
-              {height > 1551 && height <= 2500 && <div className="nav-inner"></div>}
-            </div>
-          </a>
-          <a href="#contact">
-            <div className="nav-outer">
-              {height > 2500 && <div className="nav-inner"></div>}
-            </div>
-          </a>
+          <div className="nav-outer" onClick={() => smoothScroll(0)}>
+            {height <= 605 && <div className="nav-inner"></div>}
+          </div>
+          <div className="nav-outer" onClick={() => smoothScroll(780)}>
+            {height > 605 && height <= 1100 && <div className="nav-inner"></div>}
+          </div>
+          <div className="nav-outer" onClick={() => smoothScroll(1561)}>
+            {height > 1100 && height <= 2300 && <div className="nav-inner"></div>}
+          </div>
+          <div className="nav-outer" onClick={() => smoothScroll(2700)}>
+            {height > 2300 && <div className="nav-inner"></div>}
+          </div>
         </div>
       </div>
     );

@@ -27,6 +27,7 @@ export default class App extends Component {
   }
 
   changeHeight(height = window.pageYOffset) {
+    console.log(this.state.height);
     this.setState({height});
   }
 
@@ -86,6 +87,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="App" id="app-container">
+        <a id="about"></a>
         {this.state.project !== null && <div className="app-open-modal" onClick={this.hideModal}></div>}
         <Navbar
           height={this.state.height}
