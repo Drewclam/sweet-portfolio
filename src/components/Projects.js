@@ -12,7 +12,6 @@ export default class Projects extends Component {
 
     return (
       <div className="projects-container">
-        <a name="projects"></a>
         <p className="section-title">Projects.</p>
         <div className="projects-wrapper">
           <div className="project project-left" onClick={() => renderModal(0)}>

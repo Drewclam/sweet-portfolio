@@ -7,7 +7,6 @@ export default class Contact extends Component {
     const { name, email, body, changeName, changeEmail, changeBody, sendMessage, isSending, sent } = this.props;
     return (
       <div className="contact-container">
-        <a name="contact"></a>
         <p className="section-title alt-section-title">Contact.</p>
         <form onSubmit={sendMessage} className="contact-message-wrapper">
           <div className="contact-message-meta">

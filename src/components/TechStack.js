@@ -4,7 +4,6 @@ export default class TechStack extends Component {
   render() {
     return (
       <div className="tech-container">
-      <a name="tech"></a>
         <p className="section-title alt-section-title">Tech Stack.</p>
         <div className="tech-wrapper">
           <p className="small">Html.</p>
