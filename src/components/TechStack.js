@@ -5,7 +5,7 @@ export default class TechStack extends Component {
     return (
       <div className="tech-container">
         <a name="tech"></a>
-        <p className="section-title">Tech Stack.</p>
+        <p className="section-title alt-section-title">Tech Stack.</p>
         <div className="tech-wrapper">
           <p className="small">Html.</p>
           <p className="large">Angular 2.</p>

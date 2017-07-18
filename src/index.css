@@ -27,6 +27,10 @@ html {
   font-weight: bold;
 }
 
+.alt-section-title {
+  color: white;
+}
+
 /* Header */
 .header-container {
   display: flex;
@@ -160,6 +164,7 @@ html {
   flex-direction: column;
   align-items: left;
   padding: 5rem 6rem;
+  background-color: black;
 }
 
 .tech-wrapper {
@@ -174,6 +179,7 @@ html {
   font-weight: bold;
   padding: 0 3px;
   height: 15px;
+  color: white;
 }
 
 .tech-wrapper .small {

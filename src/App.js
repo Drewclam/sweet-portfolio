@@ -4,7 +4,6 @@ import axios from 'axios';
 import './App.css';
 import Navbar from './components/Navbar';
 import About from './components/About';
-import Header from './components/Header';
 import TechStack from './components/TechStack';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
@@ -90,7 +89,6 @@ export default class App extends Component {
     return (
       <div className="App" id="app-container">
         {this.state.project !== null && <div className="app-open-modal" onClick={this.hideModal}></div>}
-        <Header />
         <Navbar
           height={this.state.height}
           changeHeight={this.changeHeight.bind(this)}

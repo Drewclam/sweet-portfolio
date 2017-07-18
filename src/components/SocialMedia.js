@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { SocialIcon } from '../../node_modules/react-social-icons/lib/react-social-icons.js';
 
-export default class Header extends Component {
+export default class SocialMedia extends Component {
   render() {
     const socialUrls = [
       'https://www.facebook.com/DrewCLam',
