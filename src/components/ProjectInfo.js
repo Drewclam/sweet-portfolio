@@ -4,6 +4,7 @@ import itsCutTime1 from '../images/itsCutTime1.png';
 import recipely1 from '../images/recipely1.png';
 import findAHike1 from '../images/findAHike1.png';
 import ngChallenge1 from '../images/ngChallenge1.png';
+import Octicon from 'react-octicon';
 
 class ProjectInfo extends Component {
 
@@ -81,7 +82,7 @@ class ProjectInfo extends Component {
         <span className="project-info-description">
           {projectData.description[project]}
         </span>
-        <a className="project-info-github" href={projectData.gitHub[project]}>Github</a>
+        <a className="project-info-github octicon octicon-logo-github" href={projectData.gitHub[project]}></a>
       </div>
     </div>}
   }
