@@ -51,10 +51,12 @@ export default class App extends Component {
 
   renderModal(id) {
     this.setState({project: id});
+    document.body.style.overflow = "hidden";
   }
 
   hideModal() {
     this.setState({project: null});
+    document.body.style.overflow = "scroll";
   }
 
   sendMessage(e) {

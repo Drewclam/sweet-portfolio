@@ -74,14 +74,10 @@ class ProjectInfo extends Component {
 
     {return project !== null && <div className="project-info">
       <span className="project-info-title">{projectData.title[project]}</span>
-      <img className="project-info-image" src={projectData.image[project]}/>
-      <div className="project-info-icons">
-        {projectData.icons[project]}
-      </div>
+      <img className="project-info-image" src={projectData.image[project]} />
+      <div className="project-info-icons">{projectData.icons[project]}</div>
       <div className="project-info-content-wrapper">
-        <span className="project-info-description">
-          {projectData.description[project]}
-        </span>
+        <span className="project-info-description">{projectData.description[project]}</span>
         <a className="project-info-github octicon octicon-logo-github" href={projectData.gitHub[project]}></a>
       </div>
     </div>}

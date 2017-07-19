@@ -70,7 +70,7 @@ export default class ProjectSlider extends Component {
             <span className="octicon octicon-arrow-right" onClick={this.previous}></span>
           </div>
         </div>
-        <div className="project-slider-github"><a href=""></a>View on GitHub</div>
+        <div className="project-slider-github"><a href="github.com/drewclam"></a>View on GitHub</div>
         <ProjectInfo hideModal={hideModal} project={project} />
       </div>
     );
