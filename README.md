@@ -6,4 +6,4 @@
 
 ## Usage
 
-Deployed at __www.andrewlam.me__.
+Deployed at __http://andrewlam.me__.
