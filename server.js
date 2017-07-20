@@ -10,7 +10,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.post('/contact', (req, res) => {
-  console.log('post request heard', account, req.body);
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {

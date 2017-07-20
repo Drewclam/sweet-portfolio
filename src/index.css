@@ -26,6 +26,9 @@ html {
 .section-title {
   font-size: 3.5em;
   font-weight: bold;
+}
+
+.about-title {
   margin-top: 8rem;
 }
 
@@ -35,7 +38,7 @@ html {
 }
 
 .project-section-title {
-  /*margin-left: 65vw;*/
+  margin-left: 65vw;
 }
 
 /* Header */
@@ -115,6 +118,7 @@ html {
 
 .blurb-content a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .blurb-content a:visited {
@@ -202,27 +206,21 @@ html {
 /* ProjectSlider */
 .project-slider-container {
   display: flex;
+  flex-direction: column;
   height: 100vh;
-  flex-direction: column;
-  align-items: right;
   overflow: hidden;
-  border: 1px solid red;
-}
-
-.project-slider-position {
-  /*display: flex;*/
-  flex-direction: column;
-  justify-content: flex-end;
-  border: 1px solid red;
 }
 
 .project-slider-wrapper {
   display: flex;
-  margin-top: 1rem;
+  align-items: center;
+  width: 90%;
+  margin-top: 7rem;
 }
 
 .project-slider {
-  width: 88%;
+  border: 1px solid grey;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -233,7 +231,7 @@ html {
 .slick-slide {
   display: flex;
   flex-direction: row;
-  max-height: 15vw;
+  max-height: 13vw;
   cursor: pointer;
 }
 
@@ -243,23 +241,41 @@ html {
 
 .project-slider-controls {
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
   font-weight: bold;
   color: grey;
-  margin-left: 1vw;
+  margin-left: 2vw;
 }
 
 .project-slider-controls span {
-  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  color: black;
   cursor: pointer;
+  transition: 0.4s;
+}
+
+.project-slider-controls span:hover {
+  background-color: black;
+  color: white;
+  transition: 0.4s;
+}
+
+.project-slider-github-link-wrapper {
+  display: flex;
+  margin-top: 5rem;
+  width: 93vw;
+  justify-content: flex-end;
 }
 
 .project-slider-github-link {
-  text-decoration: none;
-}
-
-.project-slider-github {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -268,33 +284,26 @@ html {
   /*width: 11rem;*/
   width: 12vw;
   height: 3rem;
-  /*border-radius: 3px;*/
-  /*border: 2px solid black;*/
+  border-radius: 3px;
+  border: 2px solid black;
   /*margin-top: 4rem;*/
   /*margin-left: 70vw;*/
   /*margin-left: 70rem;*/
   cursor: pointer;
   transition: 0.4s;
+  text-decoration: none;
 }
 
-/*background-color: white;
-  color: black;
-  border: 3px solid white;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 0.5rem;
-  cursor: pointer;
-  margin-top: 1rem;
-  width: 12vw;
-  height: 3rem;
-  transition: 0.40s;*/
+.project-slider-github-link:visited {
+  color: white;
+}
 
-.project-slider-github:hover {
+.project-slider-github-link:hover {
   background-color: white;
   color: black;
   transition: 0.4s;
 }
+
 
 * { /* for react-slick */
   /*min-height: 0;*/
