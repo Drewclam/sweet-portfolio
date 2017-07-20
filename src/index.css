@@ -214,13 +214,13 @@ html {
 .project-slider-wrapper {
   display: flex;
   align-items: center;
-  width: 90%;
+  width: 90vw;
   margin-top: 7rem;
 }
 
 .project-slider {
   border: 1px solid grey;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
 }
 
@@ -231,7 +231,7 @@ html {
 .slick-slide {
   display: flex;
   flex-direction: row;
-  max-height: 13vw;
+  max-height: 11rem;
   cursor: pointer;
 }
 
@@ -272,6 +272,7 @@ html {
   display: flex;
   margin-top: 5rem;
   width: 93vw;
+  min-width: 1042px;
   justify-content: flex-end;
 }
 
@@ -282,7 +283,7 @@ html {
   background-color: black;
   color: white;
   /*width: 11rem;*/
-  width: 12vw;
+  width: 10rem;
   height: 3rem;
   border-radius: 3px;
   border: 2px solid black;
@@ -346,7 +347,7 @@ html {
 }
 
 .project-info i {
-  font-size: 3vw;
+  font-size: 2.5rem;
   padding: 1vh 0.5vw;
 }
 
