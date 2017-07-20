@@ -420,7 +420,7 @@ html {
   margin-top: 6rem;
   padding: 0 8rem;
   background-color: black;
-  width: 80vw;
+  width: 75vw;
   color: white;
 }
 
@@ -432,7 +432,7 @@ html {
 /* SocialMedia */
 .social-media-container {
   flex: 0.5;
-  margin-left: 30rem;
+  margin-left: 40rem;
   display: flex;
 }
 
