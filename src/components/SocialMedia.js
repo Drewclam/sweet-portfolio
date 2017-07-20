@@ -10,18 +10,16 @@ export default class SocialMedia extends Component {
     ];
 
     return (
-      <div className="header-container">
-        <div className="social-media-container">
-          {socialUrls.map(url =>
-            <div className="social-media-item">
-              <SocialIcon
-                url={url}
-                color="white"
-                style={{ height: 35, width: 35 }}
-              />
-            </div>
-          )}
-        </div>
+      <div className="social-media-container">
+        {socialUrls.map(url =>
+          <div className="social-media-item">
+            <SocialIcon
+              url={url}
+              color="white"
+              style={{ height: 35, width: 35 }}
+            />
+          </div>
+        )}
       </div>
     );
   }

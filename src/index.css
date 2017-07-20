@@ -10,7 +10,8 @@ body {
 }
 
 html {
-  min-width: 1042px;
+  /*min-width: 1042px;*/
+  min-width: 1200px;
 }
 
 .app-open-modal {
@@ -35,54 +36,12 @@ html {
 .alt-section-title {
   color: white;
   margin-left: 13vw;
+  margin-top: 10rem;
 }
 
 .project-section-title {
   margin-left: 65vw;
-}
-
-/* Header */
-.header-container {
-  display: flex;
-  flex-direction: row;
-  font-size: 20px;
-  height: 4.5rem;
-}
-
-.header-name {
-  flex: 4;
-  /*border: 1px solid blue;*/
-  text-align: left;
-  padding: 1rem;
-  margin-left: 3rem;
-}
-
-.social-media-container {
-  flex: 2;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 2rem;
-}
-
-.social-media-container .social-media-item {
-  padding: 3px;
-}
-
-.social-media-container i {
-  color: white;
-  background-color: black;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 2rem;
-  width: 2rem;
-  margin-right: 0.5rem;
-}
-
-.social-media-container a {
-  text-decoration: none;
+  margin-top: 10rem;
 }
 
 /* About */
@@ -90,7 +49,7 @@ html {
   display: flex;
   padding: 0 3vw;
   align-items: flex-start;
-  height: 100vh;
+  height: 50rem;
   overflow: hidden;
 }
 
@@ -114,15 +73,6 @@ html {
 .about-container .about-blurb-container .blurb-content {
   margin-top: -2rem;
   font-size: 1.5rem;
-}
-
-.blurb-content a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.blurb-content a:visited {
-  color: blue;
 }
 
 /* Navbar */
@@ -169,7 +119,7 @@ html {
 
 /* Techstack */
 .tech-container {
-  height: 100vh;
+  height: 50rem;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -207,7 +157,7 @@ html {
 .project-slider-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 50rem;
   overflow: hidden;
 }
 
@@ -215,7 +165,7 @@ html {
   display: flex;
   align-items: center;
   width: 90vw;
-  margin-top: 7rem;
+  margin-top: 0.5rem;
 }
 
 .project-slider {
@@ -282,14 +232,10 @@ html {
   justify-content: center;
   background-color: black;
   color: white;
-  /*width: 11rem;*/
   width: 10rem;
   height: 3rem;
   border-radius: 3px;
   border: 2px solid black;
-  /*margin-top: 4rem;*/
-  /*margin-left: 70vw;*/
-  /*margin-left: 70rem;*/
   cursor: pointer;
   transition: 0.4s;
   text-decoration: none;
@@ -305,12 +251,6 @@ html {
   transition: 0.4s;
 }
 
-
-* { /* for react-slick */
-  /*min-height: 0;*/
-  /*min-width: 0;*/
-}
-
 /* Project Info */
 .project-info {
   position: fixed;
@@ -319,14 +259,15 @@ html {
   align-items: center;
   top: 10vh;
   left: 50vw;
+  /*top: 5rem;*/
+  /*left: 45rem;*/
   transform: translateX(-50%);
   height: 38rem;
   background-color: white;
   border: 1px solid #e2e2e2;
-  padding: 1rem 5vw;
+  padding: 1rem 5rem;
   z-index: 999;
-  width: 50vw;
-  /*overflow: hidden;*/
+  width: 45rem;
 }
 
 .project-info-title {
@@ -336,8 +277,8 @@ html {
 }
 
 .project-info-image {
-  /*max-height: 20rem;*/
-  max-height: 23vw;
+  /*max-width: 33rem;*/
+  max-height: 23rem;
 }
 
 .project-info-icons {
@@ -348,7 +289,7 @@ html {
 
 .project-info i {
   font-size: 2.5rem;
-  padding: 1vh 0.5vw;
+  padding: 1rem 0.5rem;
 }
 
 .project-info-content-wrapper {
@@ -363,15 +304,14 @@ html {
   display: flex;
   flex-wrap: wrap;
   font-size: 1rem;
-  width: 40vw;
+  max-width: 40rem;
 }
 
 .project-info-github {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
   cursor: pointer;
   width: 10%;
-  /*padding: 1rem 0;*/
   margin-top: 2rem;
   text-decoration: none;
 }
@@ -385,7 +325,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: left;
-  height: 100vh;
+  height: 50rem;
   background-color: black;
 }
 
@@ -430,7 +370,6 @@ html {
   font-size: 16px;
   border: 1px solid #aaaaaa;
   resize: none;
-
 }
 
 .contact-message-body:disabled::placeholder {
@@ -475,18 +414,44 @@ html {
 
 /* Footer */
 .footer-container {
+  display: flex;
+  align-items: center;
   height: 5rem;
   margin-top: 6rem;
   padding: 0 8rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: black;
-  width: 79%;
+  width: 80vw;
+  color: white;
 }
 
-.footer-content {
+.footer-container span {
+  flex: 1;
+  min-width: 15rem;
+}
+
+/* SocialMedia */
+.social-media-container {
+  flex: 0.5;
+  margin-left: 30rem;
+  display: flex;
+}
+
+.social-media-container .social-media-item {
+  padding: 3px;
+}
+
+.social-media-container i {
   color: white;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
-  margin-left: 3vw;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+.social-media-container a {
+  text-decoration: none;
 }
