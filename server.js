@@ -27,4 +27,4 @@ app.post('/contact', (req, res) => {
   transporter.sendMail(mailOptions, (err, info) => err ? res.json(err) : res.json(info.response));
 });
 
-app.listen(port, () => console.log('App listening on 1337.'));
+app.listen(port, () => console.log('App listening on port ', port));
