@@ -5,7 +5,6 @@ import itsCutTime from '../images/itsCutTime-thumb.png';
 import recipely from '../images/recipely-thumb.png';
 import findAHike from '../images/findAHike-thumb.png';
 import ngChallenge from '../images/ngChallenge-thumb.png';
-import Octicon from 'react-octicon';
 
 export default class ProjectSlider extends Component {
   constructor(props) {

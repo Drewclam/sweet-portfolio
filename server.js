@@ -1,7 +1,7 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const app = express();
-const port = 80;
+const port = 1337;
 const account = require('./config.js');
 const bodyParser = require('body-parser');
 
